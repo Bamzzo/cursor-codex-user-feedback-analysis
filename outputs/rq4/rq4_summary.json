@@ -1,0 +1,160 @@
+{
+  "window": {
+    "start": "2026-01-01 00:00:00+00:00",
+    "end": "2026-09-13 02:20:37+00:00",
+    "forum_n": 13653,
+    "issue_n": 23843
+  },
+  "tests": [
+    {
+      "dimension": "type",
+      "chi2": 607.113431947897,
+      "p_value": 6.812466129151149e-128,
+      "cramers_v": 0.23338632278633345,
+      "n_forum": 3745,
+      "n_issue": 7401,
+      "note": "主类分布检验；多标签维度的占比不可相加为 100%"
+    },
+    {
+      "dimension": "entry",
+      "chi2": 2139.2406909105603,
+      "p_value": 0.0,
+      "cramers_v": 0.4149531865727626,
+      "n_forum": 1698,
+      "n_issue": 10726,
+      "note": "主类分布检验；多标签维度的占比不可相加为 100%"
+    },
+    {
+      "dimension": "env",
+      "chi2": 341.53132642131817,
+      "p_value": 1.1812752905540938e-72,
+      "cramers_v": 0.20607876262858937,
+      "n_forum": 1083,
+      "n_issue": 6959,
+      "note": "主类分布检验；多标签维度的占比不可相加为 100%"
+    },
+    {
+      "dimension": "cap",
+      "chi2": 2798.772503655822,
+      "p_value": 0.0,
+      "cramers_v": 0.377017006839489,
+      "n_forum": 7358,
+      "n_issue": 12332,
+      "note": "主类分布检验；多标签维度的占比不可相加为 100%"
+    }
+  ],
+  "interaction": [
+    {
+      "channel": "Cursor 论坛",
+      "n": 13653,
+      "public_reply_rate": 0.4012304987914744,
+      "zero_reply_rate": 0.5987695012085256,
+      "explicit_done_rate": 0.11448033399252912,
+      "explicit_done_label": "有采纳答案",
+      "median_replies": 0.0,
+      "median_views": 108.0,
+      "note": "采纳≠解决；浏览/点赞无 Issue 对应"
+    },
+    {
+      "channel": "Codex Issues",
+      "n": 23843,
+      "public_reply_rate": 0.5053894224720044,
+      "zero_reply_rate": 0.49461057752799564,
+      "explicit_done_rate": 0.18412112569726963,
+      "explicit_done_label": "state_reason=completed",
+      "median_replies": 1.0,
+      "median_views": NaN,
+      "note": "完成≠修复；评论已排除机器人"
+    }
+  ],
+  "noncomparable": [
+    {
+      "field": "浏览量 / 点赞",
+      "forum": "有",
+      "issue": "无",
+      "verdict": "不可直接比较",
+      "reason": "平台机制不同；浏览量不能当需求强度"
+    },
+    {
+      "field": "采纳答案",
+      "forum": "has_accepted_answer",
+      "issue": "无直接对应",
+      "verdict": "不可直接比较",
+      "reason": "论坛采纳是社区行为；Issue 没有采纳字段"
+    },
+    {
+      "field": "closed / completed",
+      "forum": "closed 主题",
+      "issue": "state_reason",
+      "verdict": "定义不同",
+      "reason": "论坛关闭多为管理动作；Issue completed 也不等于修复"
+    },
+    {
+      "field": "正文长度",
+      "forum": "仅 10.5% 主题有正文",
+      "issue": "全量 body",
+      "verdict": "不可直接比较",
+      "reason": "论坛正文覆盖率低且非随机"
+    },
+    {
+      "field": "零回复",
+      "forum": "reply_count=0",
+      "issue": "无外部人类回复",
+      "verdict": "接近但不等价",
+      "reason": "论坛回复可能含官方/机器人；Issue 已排除机器人"
+    },
+    {
+      "field": "标签",
+      "forum": "2026 年才成规模",
+      "issue": "维护者快照标签",
+      "verdict": "不可直接比较",
+      "reason": "标签体系、粒度、维护者动机不同"
+    }
+  ],
+  "hn_aux": {
+    "n_2026_window": 5027,
+    "note": "关键词过滤后的辅助样本，不承担核心结论"
+  },
+  "headline": {
+    "forum_bug_share_title": 0.18135208379110818,
+    "issue_bug_share_title": 0.22769785681332047,
+    "forum_entry_top_known_subset": "cli",
+    "issue_entry_top_known_subset": "app"
+  },
+  "entry_recognition": {
+    "Cursor 论坛": {
+      "n_total": 13653,
+      "n_recognized": 1698,
+      "coverage": 0.12436827070973411,
+      "unknown_rate": 0.8756317292902659,
+      "known_subset_share": {
+        "web": 0.05948174322732627,
+        "sdk": 0.09776207302709071,
+        "app-server": 0.0,
+        "tui": 0.004122497055359246,
+        "ios": 0.08598351001177858,
+        "extension": 0.29446407538280334,
+        "cli": 0.36160188457008247,
+        "app": 0.1578327444051826
+      }
+    },
+    "Codex Issues": {
+      "n_total": 23843,
+      "n_recognized": 10726,
+      "coverage": 0.4498594975464497,
+      "unknown_rate": 0.5501405024535503,
+      "known_subset_share": {
+        "web": 0.007644974827521908,
+        "sdk": 0.008390826030206973,
+        "app-server": 0.046802162968487784,
+        "tui": 0.05006526198023494,
+        "ios": 0.05183665858661197,
+        "extension": 0.15028901734104047,
+        "cli": 0.18310647025918328,
+        "app": 0.6658586611970911
+      }
+    }
+  },
+  "entry_comparability": "入口规则覆盖在两渠道间显著不同；全样本份额和已识别子集构成都不能直接解释为总体渠道偏好。",
+  "note": "渠道差异是渠道机制、用户构成和反馈模板共同作用的结果，不能写成总体用户偏好。"
+}

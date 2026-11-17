@@ -1,0 +1,9 @@
+﻿theme_id,theme,best_legacy_topic,jaccard_top10
+0,IDE 界面 / 窗口 / 编辑器,legacy_topic_7,0.6666666666666666
+1,社区活动与线下聚会,legacy_topic_1,0.17647058823529413
+2,模型、子 Agent 与任务路由,legacy_topic_3,0.1111111111111111
+3,Bot / Computer Use / 设备,legacy_topic_4,0.5384615384615384
+4,云端代理与仓库协作,legacy_topic_5,0.6666666666666666
+5,MCP / 网络 / 扩展宿主,legacy_topic_6,0.25
+6,订阅套餐与用量额度,legacy_topic_3,0.3333333333333333
+7,API Key / 第三方模型接入（残余主题）,legacy_topic_3,0.05263157894736842

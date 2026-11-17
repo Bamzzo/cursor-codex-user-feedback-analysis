@@ -1,0 +1,13 @@
+﻿rule_id,rule,module,a_count,missing_consequent,missing_rate,suggestion
+R18,tui -> enhancement,CLI 与终端交互,2125,1371,0.6451764705882352,出现 [tui] 时检查是否漏标 [enhancement]
+R02,app -> windows-os,Windows 桌面端,13221,8153,0.6166704485288557,出现 [app] 时检查是否漏标 [windows-os]
+R13,sandbox -> windows-os,沙箱与权限,1834,955,0.5207197382769901,出现 [sandbox] 时检查是否漏标 [windows-os]
+R10,tui -> cli,CLI 与终端交互,2125,1067,0.5021176470588236,出现 [tui] 时检查是否漏标 [cli]
+R14,bug; sandbox -> windows-os,沙箱与权限,1618,764,0.4721878862793572,出现 [bug; sandbox] 时检查是否漏标 [windows-os]
+R21,remote -> app,移动端与远程连接,1022,300,0.29354207436399216,出现 [remote] 时检查是否漏标 [app]
+R01,windows-os -> app,Windows 桌面端,7091,2023,0.28529121421520237,出现 [windows-os] 时检查是否漏标 [app]
+R04,session -> app,桌面应用与能力,2715,727,0.2677716390423573,出现 [session] 时检查是否漏标 [app]
+R05,bug; session -> app,桌面应用与能力,2194,505,0.2301731996353692,出现 [bug; session] 时检查是否漏标 [app]
+R11,browser -> app,浏览器与计算机使用,1113,77,0.06918238993710692,出现 [browser] 时检查是否漏标 [app]
+R20,computer-use -> app,浏览器与计算机使用,766,35,0.04569190600522193,出现 [computer-use] 时检查是否漏标 [app]
+R29,app; connectivity -> bug,MCP 与网络,684,21,0.03070175438596491,出现 [app; connectivity] 时检查是否漏标 [bug]

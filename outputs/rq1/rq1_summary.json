@@ -1,0 +1,322 @@
+{
+  "corpus": {
+    "body_topics": 4307,
+    "body_posts": 18498,
+    "body_topics_raw": 4322,
+    "excluded_short_docs": 15,
+    "all_topics": 41218,
+    "coverage": 0.10485710126643699,
+    "body_start": "2026-03-01 20:54:07.306000+00:00",
+    "body_end": "2026-09-13 01:00:54.063000+00:00",
+    "census_topics": 3921,
+    "pre_census_topics": 386
+  },
+  "themes": [
+    {
+      "theme_id": 5,
+      "theme": "MCP / 网络 / 扩展宿主",
+      "n_topics": 1070,
+      "share_of_body_corpus": 0.24843278384026005,
+      "mean_weight": 0.5577931698215696,
+      "top_terms": "server; mcp; tool; error; path; command; remote; host; process; local",
+      "top_category": "Bug Reports",
+      "top_category_share": 0.7429906542056075,
+      "median_views": 76.0,
+      "median_replies": 0.0,
+      "accepted_rate": 0.09065420560747664,
+      "zero_reply_rate": 0.5467289719626168,
+      "body_chars_median": 2991.5
+    },
+    {
+      "theme_id": 0,
+      "theme": "IDE 界面 / 窗口 / 编辑器",
+      "n_topics": 777,
+      "share_of_body_corpus": 0.1804039934989552,
+      "mean_weight": 0.609418522367813,
+      "top_terms": "window; chat; editor; ide; ctrl; shift; view; tab; sidebar; panel",
+      "top_category": "Bug Reports",
+      "top_category_share": 0.5444015444015444,
+      "median_views": 57.0,
+      "median_replies": 0.0,
+      "accepted_rate": 0.0978120978120978,
+      "zero_reply_rate": 0.6267696267696268,
+      "body_chars_median": 1480.0
+    },
+    {
+      "theme_id": 4,
+      "theme": "云端代理与仓库协作",
+      "n_topics": 654,
+      "share_of_body_corpus": 0.15184583236591595,
+      "mean_weight": 0.5992715533694294,
+      "top_terms": "cloud; github; repo; repository; web; automation; slack; pr; linear; team",
+      "top_category": "Bug Reports",
+      "top_category_share": 0.5428134556574924,
+      "median_views": 57.0,
+      "median_replies": 0.0,
+      "accepted_rate": 0.0963302752293578,
+      "zero_reply_rate": 0.6590214067278287,
+      "body_chars_median": 1679.0
+    },
+    {
+      "theme_id": 2,
+      "theme": "模型、子 Agent 与任务路由",
+      "n_topics": 619,
+      "share_of_body_corpus": 0.1437195263524495,
+      "mean_weight": 0.5466027655023339,
+      "top_terms": "model; subagent; fast; composer; grok; high; task; mode; parent; picker",
+      "top_category": "Bug Reports",
+      "top_category_share": 0.5024232633279483,
+      "median_views": 84.0,
+      "median_replies": 0.0,
+      "accepted_rate": 0.0888529886914378,
+      "zero_reply_rate": 0.5735056542810986,
+      "body_chars_median": 1760.0
+    },
+    {
+      "theme_id": 6,
+      "theme": "订阅套餐与用量额度",
+      "n_topics": 379,
+      "share_of_body_corpus": 0.08799628511725098,
+      "mean_weight": 0.6123243044998831,
+      "top_terms": "usage; plan; included; limit; demand; pro; on; billing; pool; quota",
+      "top_category": "Help",
+      "top_category_share": 0.37730870712401055,
+      "median_views": 116.0,
+      "median_replies": 0.0,
+      "accepted_rate": 0.09762532981530343,
+      "zero_reply_rate": 0.5593667546174143,
+      "body_chars_median": 1699.0
+    },
+    {
+      "theme_id": 3,
+      "theme": "Bot / Computer Use / 设备",
+      "n_topics": 367,
+      "share_of_body_corpus": 0.08521012305549105,
+      "mean_weight": 0.6651039796352062,
+      "top_terms": "bot; grok; computer; bots; reset; recover; desktop; mac; ios; screen",
+      "top_category": "Bug Reports",
+      "top_category_share": 0.6893732970027248,
+      "median_views": 79.0,
+      "median_replies": 0.0,
+      "accepted_rate": 0.09809264305177112,
+      "zero_reply_rate": 0.6185286103542235,
+      "body_chars_median": 1713.0
+    },
+    {
+      "theme_id": 1,
+      "theme": "社区活动与线下聚会",
+      "n_topics": 229,
+      "share_of_body_corpus": 0.053169259345251914,
+      "mean_weight": 0.8665358619738361,
+      "top_terms": "luma; join; community; meet; excited; t0; meetup; area; hope; date",
+      "top_category": "Asia",
+      "top_category_share": 0.2576419213973799,
+      "median_views": 39.0,
+      "median_replies": 0.0,
+      "accepted_rate": 0.0,
+      "zero_reply_rate": 0.982532751091703,
+      "body_chars_median": 354.0
+    },
+    {
+      "theme_id": 7,
+      "theme": "API Key / 第三方模型接入（残余主题）",
+      "n_topics": 212,
+      "share_of_body_corpus": 0.04922219642442535,
+      "mean_weight": 0.6106420731312842,
+      "top_terms": "openai; api; key; model; fil; base; custom; async; vscode; byok",
+      "top_category": "Bug Reports",
+      "top_category_share": 0.5990566037735849,
+      "median_views": 107.5,
+      "median_replies": 0.0,
+      "accepted_rate": 0.15566037735849056,
+      "zero_reply_rate": 0.5660377358490566,
+      "body_chars_median": 1640.0
+    }
+  ],
+  "tests": {
+    "views_kruskal": {
+      "H": 412.5610903476948,
+      "p": 4.823215169189876e-85
+    },
+    "replies_kruskal": {
+      "H": 176.45644470118506,
+      "p": 1.0908170662087566e-34
+    },
+    "accepted_chi2": {
+      "chi2": 34.29142719440213,
+      "p": 1.5190779129552472e-05,
+      "cramers_v": 0.08922886000459988
+    },
+    "zero_reply_chi2": {
+      "chi2": 168.83338773997212,
+      "p": 4.4227092020994e-33,
+      "cramers_v": 0.19798930519927788
+    },
+    "category_chi2": {
+      "chi2": 3059.20582713924,
+      "p": 0.0,
+      "cramers_v": 0.37690501046219066,
+      "n": 4307
+    },
+    "note": "互动差异是论坛行为分布，不等于需求重要性或产品质量。",
+    "coverage_sensitivity": {
+      "spearman": 0.9761904761904763,
+      "p": 3.314396026200098e-05,
+      "n_full": 4307,
+      "n_census": 3921
+    },
+    "refit_match_median_cosine": 0.9981845244802441,
+    "internal_metrics": {
+      "k": 8,
+      "n_docs": 4307,
+      "n_features": 6209,
+      "reconstruction_error": 61.888195996946735,
+      "relative_reconstruction_error": 0.8892846073267923,
+      "reconstruction_share": 0.11071539267320774,
+      "n_iter": 121,
+      "umass_coherence_top10": -1.2909380417357643,
+      "topic_diversity_top10": 0.975,
+      "mean_dominant_topic_share": 0.6047560936071137,
+      "note": "reconstruction_share=1-||X-WH||_F^2/||X||_F^2，是未中心化 TF-IDF 矩阵的相对重构比例，不等同于 PCA 方差解释率或主题准确率；mean_dominant_topic_share 表示每篇文本最大主题权重占比。内部指标不证明主题等于真实用户需求。"
+    }
+  },
+  "stability_bootstrap_mean": 0.8891504292446059,
+  "legacy_mapping": [
+    {
+      "theme_id": 0,
+      "theme": "IDE 界面 / 窗口 / 编辑器",
+      "best_legacy_topic": "legacy_topic_7",
+      "jaccard_top10": 0.6666666666666666
+    },
+    {
+      "theme_id": 1,
+      "theme": "社区活动与线下聚会",
+      "best_legacy_topic": "legacy_topic_1",
+      "jaccard_top10": 0.17647058823529413
+    },
+    {
+      "theme_id": 2,
+      "theme": "模型、子 Agent 与任务路由",
+      "best_legacy_topic": "legacy_topic_3",
+      "jaccard_top10": 0.1111111111111111
+    },
+    {
+      "theme_id": 3,
+      "theme": "Bot / Computer Use / 设备",
+      "best_legacy_topic": "legacy_topic_4",
+      "jaccard_top10": 0.5384615384615384
+    },
+    {
+      "theme_id": 4,
+      "theme": "云端代理与仓库协作",
+      "best_legacy_topic": "legacy_topic_5",
+      "jaccard_top10": 0.6666666666666666
+    },
+    {
+      "theme_id": 5,
+      "theme": "MCP / 网络 / 扩展宿主",
+      "best_legacy_topic": "legacy_topic_6",
+      "jaccard_top10": 0.25
+    },
+    {
+      "theme_id": 6,
+      "theme": "订阅套餐与用量额度",
+      "best_legacy_topic": "legacy_topic_3",
+      "jaccard_top10": 0.3333333333333333
+    },
+    {
+      "theme_id": 7,
+      "theme": "API Key / 第三方模型接入（残余主题）",
+      "best_legacy_topic": "legacy_topic_3",
+      "jaccard_top10": 0.05263157894736842
+    }
+  ],
+  "manual_validation": {
+    "reviewed": 48,
+    "theme_fit": 46,
+    "theme_fit_rate": 0.9583333333333334,
+    "product_feedback_share": 0.875,
+    "misfit_topics": [
+      {
+        "theme_id": 5,
+        "topic_id": 168848,
+        "title": "CLI agent prepends bundled Node onto PATH",
+        "boundary_note": "CLI 把内置 Node 加到 PATH，属 CLI/环境问题，不是 MCP/网络/远程（边界误归）"
+      },
+      {
+        "theme_id": 7,
+        "topic_id": 168717,
+        "title": "We're experiencing high demand for Cursor Grok 4.6 right now. Please switch to Auto, another model, or try again in a few moments",
+        "boundary_note": "Grok 高需求限流提示，属容量/用量问题，不是 API key（边界误归）"
+      }
+    ],
+    "per_theme": [
+      {
+        "theme_id": 0,
+        "theme": "IDE 界面 / 窗口 / 编辑器",
+        "reviewed": 6,
+        "fit": 6,
+        "fit_rate": 1.0,
+        "product_feedback_share": 1.0
+      },
+      {
+        "theme_id": 1,
+        "theme": "社区活动与线下聚会",
+        "reviewed": 6,
+        "fit": 6,
+        "fit_rate": 1.0,
+        "product_feedback_share": 0.0
+      },
+      {
+        "theme_id": 2,
+        "theme": "模型、子 Agent 与任务路由",
+        "reviewed": 6,
+        "fit": 6,
+        "fit_rate": 1.0,
+        "product_feedback_share": 1.0
+      },
+      {
+        "theme_id": 3,
+        "theme": "Bot / Computer Use / 设备",
+        "reviewed": 6,
+        "fit": 6,
+        "fit_rate": 1.0,
+        "product_feedback_share": 1.0
+      },
+      {
+        "theme_id": 4,
+        "theme": "云端代理与仓库协作",
+        "reviewed": 6,
+        "fit": 6,
+        "fit_rate": 1.0,
+        "product_feedback_share": 1.0
+      },
+      {
+        "theme_id": 5,
+        "theme": "MCP / 网络 / 扩展宿主",
+        "reviewed": 6,
+        "fit": 5,
+        "fit_rate": 0.8333333333333334,
+        "product_feedback_share": 1.0
+      },
+      {
+        "theme_id": 6,
+        "theme": "订阅套餐与用量额度",
+        "reviewed": 6,
+        "fit": 6,
+        "fit_rate": 1.0,
+        "product_feedback_share": 1.0
+      },
+      {
+        "theme_id": 7,
+        "theme": "API Key / 第三方模型接入（残余主题）",
+        "reviewed": 6,
+        "fit": 5,
+        "fit_rate": 0.8333333333333334,
+        "product_feedback_share": 1.0
+      }
+    ],
+    "method": "LLM 辅助的结构化回读（每主题权重最高 6 帖），不是独立人工双盲标注；名称与边界需人工抽检确认。"
+  },
+  "naming_note": "主题名称由高频词规则生成后人工复核；名称是解释标签，不是客观类别。"
+}

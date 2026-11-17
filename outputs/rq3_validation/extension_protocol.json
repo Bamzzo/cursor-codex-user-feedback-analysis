@@ -1,0 +1,7 @@
+{
+  "scope": "diagnostic extensions; do not replace primary RQ3 estimates",
+  "A4": "boxplots include observed first external replies only; non-replies are right-censored",
+  "A5": "text-only MultinomialNB compared with text-only logistic regression on same temporal split",
+  "B5": "three expanding temporal folds; mature-label cohort and horizon purge applied",
+  "A6": "quantile-bin calibration and retrospective oracle prior-shift sensitivity; adjustment uses held-out test prevalence and is not deployable; class-conditional score stability is unverified"
+}

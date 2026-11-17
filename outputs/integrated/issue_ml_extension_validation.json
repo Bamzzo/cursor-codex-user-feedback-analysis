@@ -1,0 +1,132 @@
+{
+  "generated_local": "2026-11-13T22:39:54",
+  "purpose": "Read-only validation of the delivered Issue ML extension; no retraining.",
+  "passed": 10,
+  "total": 10,
+  "checks": [
+    {
+      "check": "classification split sizes",
+      "passed": true,
+      "observed": {
+        "train_n": 21343,
+        "test_n": 5287
+      },
+      "expected": {
+        "train_n": 21343,
+        "test_n": 5287
+      },
+      "note": "Time-ordered split from the delivered artifact."
+    },
+    {
+      "check": "classification metrics",
+      "passed": true,
+      "observed": {
+        "accuracy": 0.9612256478153962,
+        "macro_f1": 0.919426487965473
+      },
+      "expected": {
+        "accuracy": 0.9612256478,
+        "macro_f1": 0.919426488
+      },
+      "note": "TF-IDF + logistic regression; labels are existing maintainer tags."
+    },
+    {
+      "check": "classification ranking metrics",
+      "passed": true,
+      "observed": {
+        "roc_auc": 0.983658746239332,
+        "average_precision": 0.9419062665919484
+      },
+      "expected": {
+        "roc_auc": 0.9836587462,
+        "average_precision": 0.9419062666
+      },
+      "note": "Ranking metrics are reported alongside class metrics because the labels are imbalanced."
+    },
+    {
+      "check": "classification artifact verification",
+      "passed": true,
+      "observed": {
+        "test_rows_verified": 5287,
+        "metrics_match": true,
+        "max_probability_difference": 0.0,
+        "saved_model_verified": true,
+        "prediction_smoke_test": {
+          "label": "enhancement",
+          "positive_label": "enhancement",
+          "positive_score": 0.996344739936679
+        }
+      },
+      "expected": "metrics_match=true and saved_model_verified=true",
+      "note": "Saved predictions and smoke test agree with the delivered model."
+    },
+    {
+      "check": "completion selected row exists",
+      "passed": true,
+      "observed": 1,
+      "expected": 1,
+      "note": "24-hour observation window and 7-day completed outcome."
+    },
+    {
+      "check": "completion test size and positives",
+      "passed": true,
+      "observed": {
+        "n": 1395,
+        "positives": 22
+      },
+      "expected": {
+        "n": 1395,
+        "positives": 22
+      },
+      "note": "Positive class is rare in the temporal test set."
+    },
+    {
+      "check": "completion metrics",
+      "passed": true,
+      "observed": {
+        "roc_auc": 0.5269813944249486,
+        "average_precision": 0.0997498160599984,
+        "brier": 0.021151797128467
+      },
+      "expected": {
+        "roc_auc": 0.5269813944,
+        "average_precision": 0.0997498161,
+        "brier": 0.0211517971
+      },
+      "note": "The selected model provides weak ranking signal and is not an automatic decision tool."
+    },
+    {
+      "check": "30-day early interaction comparison",
+      "passed": true,
+      "observed": 1,
+      "expected": 1,
+      "note": "Retains the delivered comparison rather than selecting on the test set."
+    },
+    {
+      "check": "30-day early interaction AUC",
+      "passed": true,
+      "observed": 0.6133896830799486,
+      "expected": 0.6133896831,
+      "note": "Useful as a research comparison, not evidence of deployable performance."
+    },
+    {
+      "check": "completion artifact verification",
+      "passed": true,
+      "observed": {
+        "all_12_cohort_labels_checked": true,
+        "all_temporal_maturity_gaps_checked": true,
+        "raw_data_hashes_match": true,
+        "selected_saved_model_predictions_match": true,
+        "selected_test_rows": 1395,
+        "metrics_recomputed": true
+      },
+      "expected": "all verification flags true",
+      "note": "Recomputed metrics and saved predictions agree."
+    }
+  ],
+  "interpretation": {
+    "classification": "辅助 bug/enhancement 标签分流，不代表严重程度或真实故障率。",
+    "completion_prediction": "24h 观察预测 7d completed 的时间外信号很弱；不用于自动决策。",
+    "integration": "作为 RQ2 的分流扩展与 RQ3 的处理结果预测扩展接入。"
+  }
+}

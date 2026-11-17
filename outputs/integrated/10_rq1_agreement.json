@@ -1,0 +1,39 @@
+{
+  "generated_local": "2026-11-13T22:39:46",
+  "status": "pending",
+  "rows": 140,
+  "filled": {
+    "rater_A": 0,
+    "rater_B": 0
+  },
+  "scaffold": {
+    "rows": 140,
+    "created": [],
+    "per_class_in_template": {
+      "OTHER": 30,
+      "T01": 9,
+      "T02": 28,
+      "T03": 6,
+      "T04": 4,
+      "T05": 22,
+      "T06": 35,
+      "T07": 6
+    }
+  },
+  "thresholds": {
+    "agreement": 0.7,
+    "precision": 0.75,
+    "min_per_class": 20,
+    "key_share": 0.05,
+    "key_classes": [
+      "T01",
+      "T02",
+      "T03",
+      "T05",
+      "T06",
+      "T07",
+      "OTHER"
+    ]
+  },
+  "message": "评审表尚未填完：只生成/校验工作簿，不计算准确率。当前 A=0/140，B=0/140。"
+}

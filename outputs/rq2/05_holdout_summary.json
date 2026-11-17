@@ -1,0 +1,11 @@
+{
+  "train_n": 2156,
+  "test_n": 23363,
+  "train_rule_count": 6,
+  "test_rules_evaluable": 6,
+  "test_rules_pass": 2,
+  "pass_rate": 0.3333333333333333,
+  "existing_rule_survival": 157,
+  "existing_rule_n": 169,
+  "note": "时间外检验会同时受标签体系变化、样本量和真实关系变化影响，不能单独解释为规则失效。"
+}

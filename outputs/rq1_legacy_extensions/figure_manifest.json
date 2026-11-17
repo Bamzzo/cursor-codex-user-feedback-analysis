@@ -1,0 +1,45 @@
+{
+  "status": "generated_from_preserved_delivery_tables",
+  "source_dir": "data/legacy/rq1 (本地可选输入)",
+  "source_tables": [
+    {
+      "file": "T2_月度版块量.csv",
+      "sha256": "996b481482c31fc1c9f3232d4230cad1ae8655e909117ddc12122d387e274faf"
+    },
+    {
+      "file": "T7_解决率月度.csv",
+      "sha256": "6476765a9567dcc1ec3324ea67b1cc85949737cb64dc73431da5c849a48ada17"
+    },
+    {
+      "file": "T6_痛点词.csv",
+      "sha256": "eadfa76a49740b81fc37be7130f2c172a97609319cf2429553f516a40e188c7b"
+    }
+  ],
+  "figures": [
+    {
+      "file": "rq1_07_全量版块月度结构.png",
+      "bytes": 176075,
+      "sha256": "c5da80e0e1180d1cb9d54f26fa6ae4094fccab7c7b563eece3c74f0ccc4301cb",
+      "source": "outputs from teammate RQ1 delivery; distinct sampling/time scopes"
+    },
+    {
+      "file": "rq1_08_四类反馈长期趋势.png",
+      "bytes": 145577,
+      "sha256": "25603a1a630b2be6e38c24f451406699562efc9d6ed5b8fd376bd81a445e3639",
+      "source": "outputs from teammate RQ1 delivery; distinct sampling/time scopes"
+    },
+    {
+      "file": "rq1_09_月度回应与采纳.png",
+      "bytes": 141685,
+      "sha256": "fded08626f9a0c418214b2d92d4150c6fe12826b3ddf250d4f8714fd796e29db",
+      "source": "outputs from teammate RQ1 delivery; distinct sampling/time scopes"
+    },
+    {
+      "file": "rq1_10_正文痛点词典线索.png",
+      "bytes": 168284,
+      "sha256": "29f6e7b2f269185e056f097ecbf4754c3388a5a1e70dfc35161c3d06e4bab215",
+      "source": "outputs from teammate RQ1 delivery; distinct sampling/time scopes"
+    }
+  ],
+  "scope_note": "These extension figures are not refits from raw text. They reproduce selected non-duplicative teammate analyses from their delivered result tables. Do not combine denominators with the unified RQ1 body NMF corpus."
+}

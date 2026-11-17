@@ -1,0 +1,172 @@
+{
+  "denominators": {
+    "all_issues": 27756,
+    "labeled_issues": 27320,
+    "multi_label_issues": 25519,
+    "label_occurrences": 83293,
+    "n_labels": 114
+  },
+  "thresholds": {
+    "min_support": 0.002,
+    "min_confidence": 0.3,
+    "min_lift": 1.2,
+    "min_count": 50,
+    "max_items": 4,
+    "max_antecedent": 2
+  },
+  "rule_counts": {
+    "frequent_itemsets": 609,
+    "raw_rules_after_threshold": 169,
+    "core_rules": 12
+  },
+  "holdout": {
+    "train_n": 2156,
+    "test_n": 23363,
+    "train_rule_count": 6,
+    "test_rules_evaluable": 6,
+    "test_rules_pass": 2,
+    "pass_rate": 0.3333333333333333,
+    "existing_rule_survival": 157,
+    "existing_rule_n": 169,
+    "note": "时间外检验会同时受标签体系变化、样本量和真实关系变化影响，不能单独解释为规则失效。"
+  },
+  "stability": {
+    "n_core": 12,
+    "n_stable": 2,
+    "share_stable": 0.16666666666666666
+  },
+  "negative_pairs": [
+    {
+      "label_a": "app",
+      "label_b": "cli",
+      "count": 261,
+      "lift": 0.08669398744827861
+    },
+    {
+      "label_a": "enhancement",
+      "label_b": "windows-os",
+      "count": 307,
+      "lift": 0.2251075119959332
+    },
+    {
+      "label_a": "enhancement",
+      "label_b": "tool-calls",
+      "count": 121,
+      "lift": 0.3526546527861531
+    },
+    {
+      "label_a": "rate-limits",
+      "label_b": "windows-os",
+      "count": 201,
+      "lift": 0.4373375007268611
+    },
+    {
+      "label_a": "cli",
+      "label_b": "remote",
+      "count": 108,
+      "lift": 0.4640722888401476
+    },
+    {
+      "label_a": "model-behavior",
+      "label_b": "windows-os",
+      "count": 160,
+      "lift": 0.502010419534223
+    },
+    {
+      "label_a": "context",
+      "label_b": "windows-os",
+      "count": 136,
+      "lift": 0.5245820562967747
+    },
+    {
+      "label_a": "auth",
+      "label_b": "enhancement",
+      "count": 119,
+      "lift": 0.5635127140848813
+    },
+    {
+      "label_a": "enhancement",
+      "label_b": "sandbox",
+      "count": 199,
+      "lift": 0.5641737078937287
+    },
+    {
+      "label_a": "app",
+      "label_b": "model-behavior",
+      "count": 341,
+      "lift": 0.5738393260517154
+    },
+    {
+      "label_a": "cli",
+      "label_b": "performance",
+      "count": 220,
+      "lift": 0.6130264936008812
+    },
+    {
+      "label_a": "tui",
+      "label_b": "windows-os",
+      "count": 370,
+      "lift": 0.6266123586650851
+    },
+    {
+      "label_a": "cli",
+      "label_b": "session",
+      "count": 401,
+      "lift": 0.6486154885650603
+    },
+    {
+      "label_a": "cli",
+      "label_b": "windows-os",
+      "count": 1058,
+      "lift": 0.6552257532865335
+    },
+    {
+      "label_a": "app",
+      "label_b": "code-review",
+      "count": 125,
+      "lift": 0.6574205803787921
+    },
+    {
+      "label_a": "subagent",
+      "label_b": "windows-os",
+      "count": 161,
+      "lift": 0.6873128569404386
+    },
+    {
+      "label_a": "safety-check",
+      "label_b": "windows-os",
+      "count": 123,
+      "lift": 0.6959918631909172
+    },
+    {
+      "label_a": "bug",
+      "label_b": "hooks",
+      "count": 167,
+      "lift": 0.6998179545487387
+    },
+    {
+      "label_a": "session",
+      "label_b": "tui",
+      "count": 159,
+      "lift": 0.7032860578485538
+    },
+    {
+      "label_a": "app",
+      "label_b": "custom-model",
+      "count": 160,
+      "lift": 0.7198831977593041
+    }
+  ],
+  "manual_audit_rows": 48,
+  "manual_audit": {
+    "reviewed": 48,
+    "A&B_reviewed": 24,
+    "A&B_fit": 23,
+    "precision_estimate": 0.9583333333333334,
+    "A_only_reviewed": 24,
+    "A_only_B_missing": 4,
+    "miss_rate_proxy": 0.16666666666666666,
+    "method": "LLM 辅助的结构化回读（依据标题+清洗后正文判断），不是独立人工双盲标注；用于估计规则语义边界，需人工抽检确认。"
+  },
+  "note": "规则是分流与漏标检查线索，不是因果或真实故障发生率。"
+}

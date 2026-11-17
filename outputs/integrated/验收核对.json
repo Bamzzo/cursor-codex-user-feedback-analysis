@@ -1,0 +1,227 @@
+{
+  "checks": [
+    {
+      "check": "Issue 顶层记录 27,756",
+      "pass": true,
+      "detail": "27756"
+    },
+    {
+      "check": "Issue 去重后不减少",
+      "pass": true,
+      "detail": "27756"
+    },
+    {
+      "check": "评论顶层记录 115,280",
+      "pass": true,
+      "detail": "115280"
+    },
+    {
+      "check": "论坛主题 41,218",
+      "pass": true,
+      "detail": "41218"
+    },
+    {
+      "check": "正文主题 4,322",
+      "pass": true,
+      "detail": "4322"
+    },
+    {
+      "check": "正文帖子 18,498",
+      "pass": true,
+      "detail": "18498"
+    },
+    {
+      "check": "论坛四类版块合计 89.1%",
+      "pass": true,
+      "detail": "0.8911"
+    },
+    {
+      "check": "论坛采纳率 12.3%",
+      "pass": true,
+      "detail": "0.1231"
+    },
+    {
+      "check": "论坛零回复率 62.1%",
+      "pass": true,
+      "detail": "0.6212"
+    },
+    {
+      "check": "outcome 互斥且覆盖全部",
+      "pass": true,
+      "detail": "{'open': 16547, 'completed': 7199, 'duplicate': 2059, 'not_planned': 1797, 'reopened': 154}"
+    },
+    {
+      "check": "closed 与 open 之和等于总数",
+      "pass": true,
+      "detail": "27756"
+    },
+    {
+      "check": "close_days 非负（已关闭）",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "年龄非负",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "验收时现场重算原始文件 SHA-256",
+      "pass": true,
+      "detail": "6/6"
+    },
+    {
+      "check": "入口分类语义回归样例",
+      "pass": true,
+      "detail": "{'Cursor desktop app crashes': 'app', 'Cursor cannot connect to MCP': 'unknown', 'Sidebar layout is broken': 'unknown', 'VS Code extension fails': 'extension', 'Codex CLI freezes': 'cli', 'TUI rendering issue': 'tui'}"
+    },
+    {
+      "check": "RQ3 分组 90 天指标分子/分母闭合",
+      "pass": true,
+      "detail": "41 groups"
+    },
+    {
+      "check": "论坛分类覆盖全部主题",
+      "pass": true,
+      "detail": "41218"
+    },
+    {
+      "check": "主题与帖子未混加",
+      "pass": true,
+      "detail": "41218"
+    },
+    {
+      "check": "关键输出文件齐全",
+      "pass": true,
+      "detail": "14 files"
+    },
+    {
+      "check": "核心图存在且非空",
+      "pass": true,
+      "detail": "28"
+    },
+    {
+      "check": "组员 RQ1 独立扩展图均由当前流程重建",
+      "pass": true,
+      "detail": "4/4; missing=[]"
+    },
+    {
+      "check": "扩展图清单所列文件均存在且非空",
+      "pass": true,
+      "detail": "4"
+    },
+    {
+      "check": "三个预测任务均有基线对照",
+      "pass": true,
+      "detail": "{'closed_within_30d': 4, 'long_running_90d': 4, 'reply_3d': 4}"
+    },
+    {
+      "check": "模型指标含 AUC/AP/Brier/召回",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "RQ2 有时间外规则检验",
+      "pass": true,
+      "detail": "169"
+    },
+    {
+      "check": "RQ2 有季度稳定性",
+      "pass": true,
+      "detail": "12"
+    },
+    {
+      "check": "RQ4 入口识别覆盖率分母闭合",
+      "pass": true,
+      "detail": "{'Cursor 论坛': 0.1244, 'Codex Issues': 0.4499}"
+    },
+    {
+      "check": "RQ4 多选入口条件命中率按已识别分母闭合",
+      "pass": true,
+      "detail": "15 category-channel rows"
+    },
+    {
+      "check": "RQ1 有正文样本敏感性重跑",
+      "pass": true,
+      "detail": "8"
+    },
+    {
+      "check": "RQ1 K 扫描覆盖 6 个候选且保留 K=8",
+      "pass": true,
+      "detail": "K=4,6,8,10,12,14"
+    },
+    {
+      "check": "RQ1 重构比例指标明确且范围有效",
+      "pass": true,
+      "detail": "重构诊断不是 PCA 方差解释率"
+    },
+    {
+      "check": "RQ1 移除易误读的 explained_weight_mean",
+      "pass": true,
+      "detail": "使用相对重构比例并明确边界"
+    },
+    {
+      "check": "RQ3 文本基线与滚动验证结果齐全",
+      "pass": true,
+      "detail": "rows=15, rolling_folds=3"
+    },
+    {
+      "check": "RQ3 扩展指标有效且保留成熟标签 purge horizon",
+      "pass": true,
+      "detail": "滚动窗只作敏感性验证"
+    },
+    {
+      "check": "RQ3 A4/A6 诊断边界已记录",
+      "pass": true,
+      "detail": "A4 条件于已回复；A6 校正使用测试集率，仅回顾性诊断"
+    },
+    {
+      "check": "模型实际白名单输入无禁止字段",
+      "pass": true,
+      "detail": "检查 66 项输入"
+    },
+    {
+      "check": "新增材料口径核验（08）全部通过",
+      "pass": true,
+      "detail": "18/18"
+    },
+    {
+      "check": "竞争风险独立复现（09）全部通过",
+      "pass": true,
+      "detail": "17/17"
+    },
+    {
+      "check": "竞争风险资格样本与主快照可对账",
+      "pass": true,
+      "detail": "N=27585，全量=27756"
+    },
+    {
+      "check": "30 天 completed 严格低于任意关闭",
+      "pass": true,
+      "detail": "4 个情景均成立"
+    },
+    {
+      "check": "交付脚本原样重跑（09b）与交付结果一致",
+      "pass": true,
+      "detail": "12/12"
+    },
+    {
+      "check": "新 RQ1 分母闭合（9,498）",
+      "pass": true,
+      "detail": "{'candidate': 9569, 'first_post_fetched': 9543, 'usable_body': 9518, 'english_model': 9498, 'english_share_of_usable': 0.997898718218113}"
+    },
+    {
+      "check": "新 RQ1 盲审状态已记录（未填完不得报准确率）",
+      "pass": true,
+      "detail": "pending"
+    },
+    {
+      "check": "新 RQ1 双人盲审工作簿存在且不泄露模型标签",
+      "pass": true,
+      "detail": "两表仅 review_id/title/excerpt/label/notes"
+    }
+  ],
+  "n_pass": 44,
+  "n_total": 44,
+  "all_pass": true
+}

@@ -1,0 +1,352 @@
+{
+  "denominators": {
+    "all_issues": 27756,
+    "closed": 11055,
+    "eligible_30d": 22722,
+    "eligible_90d": 15090,
+    "eligible_3d": 27116
+  },
+  "outcomes": {
+    "open": 16547,
+    "completed": 7199,
+    "duplicate": 2059,
+    "not_planned": 1797,
+    "reopened": 154
+  },
+  "overview": [
+    {
+      "metric": "首次外部人类回复",
+      "n": 27756,
+      "observed": 15417,
+      "ratio": 0.5554474708171206,
+      "median_days": 1.0163541666666667,
+      "p75_days": 11.545370370370371,
+      "p90_days": 47.32327314814815,
+      "definition": "排除机器人、Issue 作者本人；截至快照，含删失",
+      "ci_low": 0.5495941720520259,
+      "ci_high": 0.5612854231687192
+    },
+    {
+      "metric": "3 天内首次外部回复",
+      "n": 27116,
+      "observed": 9150,
+      "ratio": 0.33743915031715593,
+      "median_days": 0.14306712962962964,
+      "p75_days": NaN,
+      "p90_days": NaN,
+      "definition": "仅创建满 3 天的 Issue，固定窗口",
+      "ci_low": 0.33183453174953753,
+      "ci_high": 0.3430898232658694
+    },
+    {
+      "metric": "首次维护者回复",
+      "n": 27756,
+      "observed": 462,
+      "ratio": 0.01664504971897968,
+      "median_days": 0.7130034722222223,
+      "p75_days": 14.864273726851852,
+      "p90_days": 67.84504050925928,
+      "definition": "MEMBER/COLLABORATOR/OWNER，排除机器人；不等于官方 SLA",
+      "ci_low": 0.015205423599002121,
+      "ci_high": 0.018218455880194905
+    },
+    {
+      "metric": "3 天内维护者回复",
+      "n": 27116,
+      "observed": 280,
+      "ratio": 0.010326006785661602,
+      "median_days": NaN,
+      "p75_days": NaN,
+      "p90_days": NaN,
+      "definition": "仅创建满 3 天的 Issue，固定窗口",
+      "ci_low": 0.009190208803130998,
+      "ci_high": 0.01160053209854153
+    },
+    {
+      "metric": "已关闭",
+      "n": 27756,
+      "observed": 11055,
+      "ratio": 0.39829226113272803,
+      "median_days": 2.0103703703703704,
+      "p75_days": 41.93772569444444,
+      "p90_days": 87.23157407407408,
+      "definition": "closed 不等于 fixed",
+      "ci_low": 0.39254739542202827,
+      "ci_high": 0.40406527689235544
+    },
+    {
+      "metric": "30 天内关闭",
+      "n": 22722,
+      "observed": 7206,
+      "ratio": 0.3171375759176129,
+      "median_days": NaN,
+      "p75_days": NaN,
+      "p90_days": NaN,
+      "definition": "仅创建满 30 天的 Issue，固定窗口",
+      "ci_low": 0.3111179740070956,
+      "ci_high": 0.3232190003384441
+    },
+    {
+      "metric": "仍开启且 ≥90 天",
+      "n": 15090,
+      "observed": 5783,
+      "ratio": 0.3832339297548045,
+      "median_days": NaN,
+      "p75_days": NaN,
+      "p90_days": NaN,
+      "definition": "仅创建满 90 天的 Issue；是快照积压，不是最终命运",
+      "ci_low": 0.3755074023337907,
+      "ci_high": 0.39101989446783997
+    },
+    {
+      "metric": "90 天以上长期未关闭",
+      "n": 15090,
+      "observed": 6814,
+      "ratio": 0.451557322730285,
+      "median_days": NaN,
+      "p75_days": NaN,
+      "p90_days": NaN,
+      "definition": "包含 90 天后才关闭与快照仍开启；固定 90 天窗口",
+      "ci_low": 0.4436304150838828,
+      "ci_high": 0.4595088890943193
+    }
+  ],
+  "km": {
+    "median_days": 127.79771990740741,
+    "not_closed_30d": 0.7134672913418887,
+    "not_closed_90d": 0.5754049256062195,
+    "not_closed_180d": 0.44447450162073066
+  },
+  "cohort": [
+    {
+      "quarter": "2025Q2",
+      "n": 593,
+      "eligible_30d": 593,
+      "not_closed_30d": 0.6239460370994954,
+      "closed_30d_rate": 0.37605396290050463,
+      "median_close_days": 69.46098379629629
+    },
+    {
+      "quarter": "2025Q3",
+      "n": 1330,
+      "eligible_30d": 1330,
+      "not_closed_30d": 0.6037593984962383,
+      "closed_30d_rate": 0.3962406015037617,
+      "median_close_days": 54.93681712962963
+    },
+    {
+      "quarter": "2025Q4",
+      "n": 1990,
+      "eligible_30d": 1990,
+      "not_closed_30d": 0.4306532663316502,
+      "closed_30d_rate": 0.5693467336683498,
+      "median_close_days": 12.510185185185184
+    },
+    {
+      "quarter": "2026Q1",
+      "n": 3834,
+      "eligible_30d": 3834,
+      "not_closed_30d": 0.49008868022953905,
+      "closed_30d_rate": 0.509911319770461,
+      "median_close_days": 24.73953703703704
+    },
+    {
+      "quarter": "2026Q2",
+      "n": 8992,
+      "eligible_30d": 8992,
+      "not_closed_30d": 0.7230871886120843,
+      "closed_30d_rate": 0.2769128113879157,
+      "median_close_days": NaN
+    },
+    {
+      "quarter": "2026Q3",
+      "n": 11017,
+      "eligible_30d": 5983,
+      "not_closed_30d": 0.853250877486209,
+      "closed_30d_rate": 0.14674912251379102,
+      "median_close_days": NaN
+    }
+  ],
+  "logrank": [
+    {
+      "dimension": "type_primary",
+      "groups": "bug; connectivity; docs; enhancement; performance; unknown",
+      "chi2": 740.502195082135,
+      "p_value": 8.567577063205567e-158,
+      "n_groups": 6,
+      "note": "未控制创建月份与标签构成，仅作探索性比较"
+    },
+    {
+      "dimension": "entry_primary",
+      "groups": "app; app-server; cli; extension; ios; sdk; tui; unknown; web",
+      "chi2": 2840.6950081107366,
+      "p_value": 0.0,
+      "n_groups": 9,
+      "note": "未控制创建月份与标签构成，仅作探索性比较"
+    },
+    {
+      "dimension": "env_group",
+      "groups": "linux; macos; other/unknown; windows",
+      "chi2": 890.6616824116632,
+      "p_value": 9.387636807021913e-193,
+      "n_groups": 4,
+      "note": "未控制创建月份与标签构成，仅作探索性比较"
+    }
+  ],
+  "models": [
+    {
+      "target": "closed_within_30d",
+      "definition": "30 天内关闭",
+      "eligible_col": "eligible_30d",
+      "eligible_n": 22722,
+      "train_n": 12537,
+      "test_n": 6817,
+      "purged_n": 3368,
+      "train_min": "2025-04-16 17:27:52+00:00",
+      "train_max": "2026-05-24 02:25:27+00:00",
+      "test_min": "2026-06-23 03:04:29+00:00",
+      "test_max": "2026-08-14 02:11:10+00:00",
+      "train_positive_rate": 0.4416527079843663,
+      "test_positive_rate": 0.14361155933695174,
+      "threshold": 0.5,
+      "seed": 42,
+      "feature_inputs_by_model": {
+        "prior_baseline": [],
+        "metadata_logistic": [
+          "author_association",
+          "created_hour",
+          "created_weekday",
+          "has_code",
+          "log_body",
+          "log_title",
+          "month_index"
+        ],
+        "text_logistic": [
+          "author_association",
+          "created_hour",
+          "created_weekday",
+          "has_code",
+          "log_body",
+          "log_title",
+          "month_index",
+          "text"
+        ],
+        "metadata_hgb": [
+          "author_association",
+          "created_hour",
+          "created_weekday",
+          "has_code",
+          "log_body",
+          "log_title",
+          "month_index"
+        ]
+      },
+      "features": "创建时可见：标题/正文、长度、是否有代码、创建时间、作者身份；不含状态/关闭时间/评论/最终标签或标签派生字段"
+    },
+    {
+      "target": "reply_3d",
+      "definition": "3 天内首次外部回复",
+      "eligible_col": "eligible_3d",
+      "eligible_n": 27116,
+      "train_n": 18305,
+      "test_n": 8135,
+      "purged_n": 676,
+      "train_min": "2025-04-16 17:27:52+00:00",
+      "train_max": "2026-07-13 16:52:41+00:00",
+      "test_min": "2026-07-16 17:04:24+00:00",
+      "test_max": "2026-09-10 02:14:26+00:00",
+      "train_positive_rate": 0.40830374214695436,
+      "test_positive_rate": 0.1904118008604794,
+      "threshold": 0.5,
+      "seed": 42,
+      "feature_inputs_by_model": {
+        "prior_baseline": [],
+        "metadata_logistic": [
+          "author_association",
+          "created_hour",
+          "created_weekday",
+          "has_code",
+          "log_body",
+          "log_title",
+          "month_index"
+        ],
+        "text_logistic": [
+          "author_association",
+          "created_hour",
+          "created_weekday",
+          "has_code",
+          "log_body",
+          "log_title",
+          "month_index",
+          "text"
+        ],
+        "metadata_hgb": [
+          "author_association",
+          "created_hour",
+          "created_weekday",
+          "has_code",
+          "log_body",
+          "log_title",
+          "month_index"
+        ]
+      },
+      "features": "创建时可见：标题/正文、长度、是否有代码、创建时间、作者身份；不含状态/关闭时间/评论/最终标签或标签派生字段"
+    },
+    {
+      "target": "long_running_90d",
+      "definition": "90 天以上长期未关闭",
+      "eligible_col": "eligible_90d",
+      "eligible_n": 15090,
+      "train_n": 4726,
+      "test_n": 4527,
+      "purged_n": 5837,
+      "train_min": "2025-04-16 17:27:52+00:00",
+      "train_max": "2026-02-04 22:21:12+00:00",
+      "test_min": "2026-05-05 23:22:10+00:00",
+      "test_max": "2026-06-15 02:14:39+00:00",
+      "train_positive_rate": 0.23360135421074904,
+      "test_positive_rate": 0.7020101612546941,
+      "threshold": 0.5,
+      "seed": 42,
+      "feature_inputs_by_model": {
+        "prior_baseline": [],
+        "metadata_logistic": [
+          "author_association",
+          "created_hour",
+          "created_weekday",
+          "has_code",
+          "log_body",
+          "log_title",
+          "month_index"
+        ],
+        "text_logistic": [
+          "author_association",
+          "created_hour",
+          "created_weekday",
+          "has_code",
+          "log_body",
+          "log_title",
+          "month_index",
+          "text"
+        ],
+        "metadata_hgb": [
+          "author_association",
+          "created_hour",
+          "created_weekday",
+          "has_code",
+          "log_body",
+          "log_title",
+          "month_index"
+        ]
+      },
+      "features": "创建时可见：标题/正文、长度、是否有代码、创建时间、作者身份；不含状态/关闭时间/评论/最终标签或标签派生字段"
+    }
+  ],
+  "notes": [
+    "closed 不等于 fixed；39.8% 关闭率不能写成 39.8% 解决率。",
+    "维护者回复覆盖率低（约 1.7%），不能解释为官方处理率。",
+    "观察终点为 Issue 表最新时间字段推定值，不是已核实抓取时间。",
+    "18,246 条评论无法关联到 Issue；快照标题/正文/标签可能是事后版本。",
+    "模型目标是快照回顾性定义，不是修复成功或用户满意预测。"
+  ]
+}

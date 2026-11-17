@@ -1,0 +1,7 @@
+﻿field,forum,issue,verdict,reason
+浏览量 / 点赞,有,无,不可直接比较,平台机制不同；浏览量不能当需求强度
+采纳答案,has_accepted_answer,无直接对应,不可直接比较,论坛采纳是社区行为；Issue 没有采纳字段
+closed / completed,closed 主题,state_reason,定义不同,论坛关闭多为管理动作；Issue completed 也不等于修复
+正文长度,仅 10.5% 主题有正文,全量 body,不可直接比较,论坛正文覆盖率低且非随机
+零回复,reply_count=0,无外部人类回复,接近但不等价,论坛回复可能含官方/机器人；Issue 已排除机器人
+标签,2026 年才成规模,维护者快照标签,不可直接比较,标签体系、粒度、维护者动机不同

@@ -1,0 +1,19 @@
+﻿check,passed,observed,expected,note
+RQ1 topic counts sum to denominator,True,9498,9498,Includes OTHER / review-needed category.
+RQ1 shares sum to one,True,0.9999999999999997,1,Shares are calculated over all eligible English topics.
+"RQ1 denominator is 9,498 English topics",True,9498,9498,"Not the 9,569 candidate IDs or 9,518 valid all-language texts."
+RQ1 valid text flow,True,9518,9518,All-language usable body before English partition.
+RQ3 post-cutoff creation exclusions,True,17,17,Excluded from the fixed observation window.
+RQ3 reopened exclusions,True,154,154,Excluded as known reopened records in the supplied survival analysis.
+RQ3 analysis N reconciliation,True,27585,27585,"27,756 - 17 post-cutoff - 154 reopened = 27,585."
+RQ3 excluded sets are disjoint,True,171,171,No overlap double-counted.
+RQ3 event counts after fixed cutoff and censoring,True,"{'0': 16532, '1': 7197, '2': 2059, '3': 1797}","{'0': 16532, '1': 7197, '2': 2059, '3': 1797}",Includes 1 recorded closure after cutoff as censored; reopened rows excluded.
+RQ3 packaged audit analysis N,True,27585,27585,Cross-check supplied audit against unified issue parquet.
+RQ3 packaged source hash matches project issue source,True,8b5cea36fff5e7ccefcc787dccee40cd84ee6765d9a760d781c4230105b9bcc9,matching SHA-256,Confirms both analyses use the same issue snapshot.
+"Primary status counts reconcile to 27,756",True,27756,27756,Primary descriptive denominator includes all snapshot records.
+"Extension event counts reconcile to 27,585",True,27585,27585,Competing-risk analysis has a narrower eligible population.
+30-day completed and closed are distinct,True,"{'completed': 0.2076834455866714, 'closed': 0.31921304501949666}",completed rate < any-closure rate,Do not label closed as resolved.
+Competing-risk curves conserve probability,True,1.2101430968414206e-14,< 1e-8,Open survival plus all cause-specific cumulative incidence equals one.
+Competing-risk curves are monotone,True,True,True,Open probability should decrease; cumulative incidence should increase.
+RQ1 primary and new themes are not pooled,True,"{'primary_n': 4307, 'new_n': 9498}",separate estimates,"Different time window, language restriction, sample design, cleaning, and topic map."
+RQ3 3-day reply and 7-day reply are not pooled,True,"{'primary': '3-day first external human reply', 'extension': '7-day any-other reply'}",separate outcomes,"Different horizon, event definition, and comment filters."

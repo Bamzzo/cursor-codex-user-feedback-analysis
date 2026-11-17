@@ -1,0 +1,117 @@
+{
+  "corpus": {
+    "candidate": 9569,
+    "first_post_fetched": 9543,
+    "usable_body": 9518,
+    "english_model": 9498,
+    "english_share_of_usable": 0.997898718218113
+  },
+  "window": "2026-04 ~ 2026-09（近期全量首帖；语言限英语）",
+  "topics": [
+    {
+      "code": "T01",
+      "label": "社区活动与线下聚会",
+      "n": 554,
+      "share": 0.058328069067172
+    },
+    {
+      "code": "T02",
+      "label": "编辑器界面、窗口与会话管理",
+      "n": 2168,
+      "share": 0.2282585807538429
+    },
+    {
+      "code": "T03",
+      "label": "Grok Bot 与远程计算机",
+      "n": 566,
+      "share": 0.0595914929458833
+    },
+    {
+      "code": "T04",
+      "label": "连接、模型服务与执行超时",
+      "n": 249,
+      "share": 0.0262160454832596
+    },
+    {
+      "code": "T05",
+      "label": "模型选择、套餐与用量反馈",
+      "n": 1963,
+      "share": 0.2066750894925247
+    },
+    {
+      "code": "T06",
+      "label": "MCP、终端与本地工具工作流",
+      "n": 2162,
+      "share": 0.2276268688144872
+    },
+    {
+      "code": "T07",
+      "label": "云端代理与代码仓库集成",
+      "n": 910,
+      "share": 0.0958096441356075
+    },
+    {
+      "code": "OTHER",
+      "label": "其他／待复核",
+      "n": 926,
+      "share": 0.0974942093072225
+    }
+  ],
+  "flow": [
+    {
+      "stage": "candidate_topics",
+      "input": 9569,
+      "retained": 9569,
+      "excluded": 0,
+      "reason": "all candidate IDs retained in topics_clean"
+    },
+    {
+      "stage": "first_posts",
+      "input": 9569,
+      "retained": 9543,
+      "excluded": 26,
+      "reason": "HTTP 404 records retained separately"
+    },
+    {
+      "stage": "usable_body_all_languages",
+      "input": 9543,
+      "retained": 9518,
+      "excluded": 25,
+      "reason": "empty/image-only/form-only or deleted placeholders"
+    },
+    {
+      "stage": "english_model_partition",
+      "input": 9518,
+      "retained": 9498,
+      "excluded": 20,
+      "reason": "other languages and uncertainty saved separately; not deleted"
+    }
+  ],
+  "language": [
+    {
+      "language": "en",
+      "valid_topics": 9498,
+      "share_of_valid_text": 0.997899,
+      "english_model_eligible": true
+    },
+    {
+      "language": "mixed",
+      "valid_topics": 18,
+      "share_of_valid_text": 0.001891,
+      "english_model_eligible": false
+    },
+    {
+      "language": "und",
+      "valid_topics": 1,
+      "share_of_valid_text": 0.000105,
+      "english_model_eligible": false
+    },
+    {
+      "language": "es",
+      "valid_topics": 1,
+      "share_of_valid_text": 0.000105,
+      "english_model_eligible": false
+    }
+  ],
+  "difference_from_primary": "主结果 4,307 条为 2023-08 起全历史的分层正文样本（覆盖 10.5%）；新语料 9,498 条为 2026-04~09 英语首帖。时间窗、语言、抽样设计、清洗与主题映射均不同，两套份额不可拼接成趋势线，也不可互相验证比例。"
+}

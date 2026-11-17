@@ -1,0 +1,9 @@
+﻿theme_id,theme,n_topics,share_of_body_corpus,mean_weight,top_terms,top_category,top_category_share,median_views,median_replies,accepted_rate,zero_reply_rate,body_chars_median
+5,MCP / 网络 / 扩展宿主,1070,0.24843278384026005,0.5577931698215696,server; mcp; tool; error; path; command; remote; host; process; local,Bug Reports,0.7429906542056075,76.0,0.0,0.09065420560747664,0.5467289719626168,2991.5
+0,IDE 界面 / 窗口 / 编辑器,777,0.1804039934989552,0.609418522367813,window; chat; editor; ide; ctrl; shift; view; tab; sidebar; panel,Bug Reports,0.5444015444015444,57.0,0.0,0.0978120978120978,0.6267696267696268,1480.0
+4,云端代理与仓库协作,654,0.15184583236591595,0.5992715533694294,cloud; github; repo; repository; web; automation; slack; pr; linear; team,Bug Reports,0.5428134556574924,57.0,0.0,0.0963302752293578,0.6590214067278287,1679.0
+2,模型、子 Agent 与任务路由,619,0.1437195263524495,0.5466027655023339,model; subagent; fast; composer; grok; high; task; mode; parent; picker,Bug Reports,0.5024232633279483,84.0,0.0,0.0888529886914378,0.5735056542810986,1760.0
+6,订阅套餐与用量额度,379,0.08799628511725098,0.6123243044998831,usage; plan; included; limit; demand; pro; on; billing; pool; quota,Help,0.37730870712401055,116.0,0.0,0.09762532981530343,0.5593667546174143,1699.0
+3,Bot / Computer Use / 设备,367,0.08521012305549105,0.6651039796352062,bot; grok; computer; bots; reset; recover; desktop; mac; ios; screen,Bug Reports,0.6893732970027248,79.0,0.0,0.09809264305177112,0.6185286103542235,1713.0
+1,社区活动与线下聚会,229,0.053169259345251914,0.8665358619738361,luma; join; community; meet; excited; t0; meetup; area; hope; date,Asia,0.2576419213973799,39.0,0.0,0.0,0.982532751091703,354.0
+7,API Key / 第三方模型接入（残余主题）,212,0.04922219642442535,0.6106420731312842,openai; api; key; model; fil; base; custom; async; vscode; byok,Bug Reports,0.5990566037735849,107.5,0.0,0.15566037735849056,0.5660377358490566,1640.0

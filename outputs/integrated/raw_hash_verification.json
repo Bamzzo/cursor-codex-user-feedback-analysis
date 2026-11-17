@@ -1,0 +1,47 @@
+{
+  "files": [
+    {
+      "file": "codex_issues_full.json",
+      "bytes": 89070964,
+      "actual_sha256": "8b5cea36fff5e7ccefcc787dccee40cd84ee6765d9a760d781c4230105b9bcc9",
+      "manifest_sha256": "8b5cea36fff5e7ccefcc787dccee40cd84ee6765d9a760d781c4230105b9bcc9",
+      "match": true
+    },
+    {
+      "file": "codex_comments.json",
+      "bytes": 98832343,
+      "actual_sha256": "6d1cd80a5ce973cf5759100425d2ea26c36db6b30f290e9bc6da6366ec7c6b80",
+      "manifest_sha256": "6d1cd80a5ce973cf5759100425d2ea26c36db6b30f290e9bc6da6366ec7c6b80",
+      "match": true
+    },
+    {
+      "file": "cursor_forum_topics_full.json",
+      "bytes": 17112539,
+      "actual_sha256": "9263daceea5897ecf300ef12406495053500e018960118e2b2eb658d164a821f",
+      "manifest_sha256": "9263daceea5897ecf300ef12406495053500e018960118e2b2eb658d164a821f",
+      "match": true
+    },
+    {
+      "file": "cursor_forum_content.json",
+      "bytes": 6328009,
+      "actual_sha256": "9d749201a4f7657e8670dc21108ee5e410373b72288f3d233f74b145fc2d81fd",
+      "manifest_sha256": "9d749201a4f7657e8670dc21108ee5e410373b72288f3d233f74b145fc2d81fd",
+      "match": true
+    },
+    {
+      "file": "cursor_forum_content_census.json",
+      "bytes": 26615567,
+      "actual_sha256": "3caee24c51f79bded953d68f50debbe63ecc2c8f5f810c047e218115f557bb5b",
+      "manifest_sha256": "3caee24c51f79bded953d68f50debbe63ecc2c8f5f810c047e218115f557bb5b",
+      "match": true
+    },
+    {
+      "file": "hn_discussions.json",
+      "bytes": 73187140,
+      "actual_sha256": "aae97070bce7cc23f7d6a61a44d563236f56753116684ab9fae21ebabdb4b424",
+      "manifest_sha256": "aae97070bce7cc23f7d6a61a44d563236f56753116684ab9fae21ebabdb4b424",
+      "match": true
+    }
+  ],
+  "all_match": true
+}

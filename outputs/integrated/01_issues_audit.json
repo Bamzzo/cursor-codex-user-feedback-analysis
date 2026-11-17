@@ -1,0 +1,68 @@
+{
+  "issues_raw": 27756,
+  "issues_after_dedupe": 27756,
+  "issue_duplicates": 0,
+  "issue_created_min": "2025-04-16 17:27:52+00:00",
+  "issue_created_max": "2026-09-13 02:19:58+00:00",
+  "issue_date_na": 0,
+  "issue_invalid_closed": 0,
+  "empty_body": 95,
+  "no_labels": 436,
+  "comments_raw": 115280,
+  "comments_after_dedupe": 115280,
+  "comments_matched": 97034,
+  "comments_unmatched": 18246,
+  "comments_used": 96999,
+  "comments_bot": 22994,
+  "comments_external_human": 60806,
+  "comments_maintainer": 641,
+  "issues_with_external_reply": 15417,
+  "issues_with_maintainer_reply": 462,
+  "outcome_counts": {
+    "open": 16547,
+    "completed": 7199,
+    "duplicate": 2059,
+    "not_planned": 1797,
+    "reopened": 154
+  },
+  "type_counts": {
+    "bug": 21791,
+    "enhancement": 5350,
+    "docs": 271,
+    "unknown": 178,
+    "performance": 69,
+    "connectivity": 59,
+    "help": 26,
+    "feedback": 12
+  },
+  "type_label_counts": {
+    "bug": 21535,
+    "enhancement": 5314,
+    "unknown": 543,
+    "docs": 260,
+    "performance": 59,
+    "connectivity": 45
+  },
+  "entry_counts": {
+    "app": 11906,
+    "cli": 7050,
+    "tui": 2361,
+    "app-server": 1891,
+    "unknown": 1830,
+    "extension": 1797,
+    "web": 534,
+    "ios": 270,
+    "sdk": 117
+  },
+  "env_counts": {
+    "windows": 9572,
+    "unknown": 9142,
+    "macos": 5508,
+    "linux": 2541,
+    "browser": 833,
+    "mobile": 158,
+    "cloud": 2
+  },
+  "management_only_issues": 0,
+  "snapshot_utc": "2026-09-13T02:20:37Z"
+}

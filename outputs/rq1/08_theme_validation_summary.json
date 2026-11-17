@@ -1,0 +1,87 @@
+{
+  "reviewed": 48,
+  "theme_fit": 46,
+  "theme_fit_rate": 0.9583333333333334,
+  "product_feedback_share": 0.875,
+  "misfit_topics": [
+    {
+      "theme_id": 5,
+      "topic_id": 168848,
+      "title": "CLI agent prepends bundled Node onto PATH",
+      "boundary_note": "CLI 把内置 Node 加到 PATH，属 CLI/环境问题，不是 MCP/网络/远程（边界误归）"
+    },
+    {
+      "theme_id": 7,
+      "topic_id": 168717,
+      "title": "We're experiencing high demand for Cursor Grok 4.6 right now. Please switch to Auto, another model, or try again in a few moments",
+      "boundary_note": "Grok 高需求限流提示，属容量/用量问题，不是 API key（边界误归）"
+    }
+  ],
+  "per_theme": [
+    {
+      "theme_id": 0,
+      "theme": "IDE 界面 / 窗口 / 编辑器",
+      "reviewed": 6,
+      "fit": 6,
+      "fit_rate": 1.0,
+      "product_feedback_share": 1.0
+    },
+    {
+      "theme_id": 1,
+      "theme": "社区活动与线下聚会",
+      "reviewed": 6,
+      "fit": 6,
+      "fit_rate": 1.0,
+      "product_feedback_share": 0.0
+    },
+    {
+      "theme_id": 2,
+      "theme": "模型、子 Agent 与任务路由",
+      "reviewed": 6,
+      "fit": 6,
+      "fit_rate": 1.0,
+      "product_feedback_share": 1.0
+    },
+    {
+      "theme_id": 3,
+      "theme": "Bot / Computer Use / 设备",
+      "reviewed": 6,
+      "fit": 6,
+      "fit_rate": 1.0,
+      "product_feedback_share": 1.0
+    },
+    {
+      "theme_id": 4,
+      "theme": "云端代理与仓库协作",
+      "reviewed": 6,
+      "fit": 6,
+      "fit_rate": 1.0,
+      "product_feedback_share": 1.0
+    },
+    {
+      "theme_id": 5,
+      "theme": "MCP / 网络 / 扩展宿主",
+      "reviewed": 6,
+      "fit": 5,
+      "fit_rate": 0.8333333333333334,
+      "product_feedback_share": 1.0
+    },
+    {
+      "theme_id": 6,
+      "theme": "订阅套餐与用量额度",
+      "reviewed": 6,
+      "fit": 6,
+      "fit_rate": 1.0,
+      "product_feedback_share": 1.0
+    },
+    {
+      "theme_id": 7,
+      "theme": "API Key / 第三方模型接入（残余主题）",
+      "reviewed": 6,
+      "fit": 5,
+      "fit_rate": 0.8333333333333334,
+      "product_feedback_share": 1.0
+    }
+  ],
+  "method": "LLM 辅助的结构化回读（每主题权重最高 6 帖），不是独立人工双盲标注；名称与边界需人工抽检确认。"
+}

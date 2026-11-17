@@ -1,0 +1,139 @@
+{
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "D:\\pyexplain\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.4.2",
+      "pandas": "2.3.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "matplotlib": "3.10.8",
+      "pyarrow": "23.0.0"
+    },
+    "seed": 42,
+    "timezone": "UTC for all timestamps"
+  },
+  "stages": [
+    {
+      "stage": "01",
+      "script": "01_build_base.py",
+      "description": "公共数据底座：清洗、统一分类、回复指标、审计",
+      "returncode": 0,
+      "seconds": 250.7,
+      "log": "outputs\\logs\\01_build_base.log"
+    },
+    {
+      "stage": "02",
+      "script": "02_rq1_topics.py",
+      "description": "RQ1 主题建模、主题验证抽样、覆盖敏感性与互动关系",
+      "returncode": 0,
+      "seconds": 23.4,
+      "log": "outputs\\logs\\02_rq1_topics.log"
+    },
+    {
+      "stage": "02b",
+      "script": "02b_rq1_k_selection.py",
+      "description": "RQ1 候选主题数多指标扫描（诊断，不自动选 K）",
+      "returncode": 0,
+      "seconds": 17.5,
+      "log": "outputs\\logs\\02b_rq1_k_selection.log"
+    },
+    {
+      "stage": "03",
+      "script": "03_rq2_rules.py",
+      "description": "RQ2 标签组合、规则 P/R/覆盖、季度稳定性与治理",
+      "returncode": 0,
+      "seconds": 50.7,
+      "log": "outputs\\logs\\03_rq2_rules.log"
+    },
+    {
+      "stage": "04",
+      "script": "04_rq3_process.py",
+      "description": "RQ3 首次回复/维护者回复/关闭、KM 与三个预测任务",
+      "returncode": 0,
+      "seconds": 174.1,
+      "log": "outputs\\logs\\04_rq3_process.log"
+    },
+    {
+      "stage": "04b",
+      "script": "04b_rq3_validation.py",
+      "description": "RQ3 文本朴素贝叶斯、滚动时间验证与评估敏感性",
+      "returncode": 0,
+      "seconds": 344.4,
+      "log": "outputs\\logs\\04b_rq3_validation.log"
+    },
+    {
+      "stage": "05",
+      "script": "05_rq4_compare.py",
+      "description": "RQ4 统一口径下的跨渠道比较",
+      "returncode": 0,
+      "seconds": 17.3,
+      "log": "outputs\\logs\\05_rq4_compare.log"
+    },
+    {
+      "stage": "08",
+      "script": "08_validate_new_materials.py",
+      "description": "新增材料口径/哈希/算术核验（只读交付包）",
+      "returncode": 0,
+      "seconds": 2.7,
+      "log": "outputs\\logs\\08_validate_new_materials.log"
+    },
+    {
+      "stage": "09",
+      "script": "09_rq3_competing_risk.py",
+      "description": "竞争风险独立复现与 reopened/截点敏感性",
+      "returncode": 0,
+      "seconds": 13.9,
+      "log": "outputs\\logs\\09_rq3_competing_risk.log"
+    },
+    {
+      "stage": "09b",
+      "script": "09b_repro_delivery_script.py",
+      "description": "用交付脚本原样重跑竞争风险（隔离目录）",
+      "returncode": 0,
+      "seconds": 63.2,
+      "log": "outputs\\logs\\09b_repro_delivery_script.log"
+    },
+    {
+      "stage": "10",
+      "script": "10_rq1_review_agreement.py",
+      "description": "新 RQ1 双人盲审工作簿与一致性评分",
+      "returncode": 0,
+      "seconds": 5.0,
+      "log": "outputs\\logs\\10_rq1_review_agreement.log"
+    },
+    {
+      "stage": "11",
+      "script": "11_rq1_legacy_extensions.py",
+      "description": "重建组员 RQ1 长期版块/互动/痛点扩展图（口径独立）",
+      "returncode": 0,
+      "seconds": 5.3,
+      "log": "outputs\\logs\\11_rq1_legacy_extensions.log"
+    },
+    {
+      "stage": "12",
+      "script": "12_validate_issue_ml_extension.py",
+      "description": "Issue 类型分流与 completed 预测扩展核验（只读交付结果）",
+      "returncode": 0,
+      "seconds": 1.7,
+      "log": "outputs\\logs\\12_validate_issue_ml_extension.log"
+    },
+    {
+      "stage": "06",
+      "script": "06_build_reports.py",
+      "description": "综合报告、研究简报与汇报大纲（读取扩展核验结果）",
+      "returncode": 0,
+      "seconds": 2.1,
+      "log": "outputs\\logs\\06_build_reports.log"
+    },
+    {
+      "stage": "07",
+      "script": "07_verify_outputs.py",
+      "description": "验收核对与输出清单",
+      "returncode": 0,
+      "seconds": 6.4,
+      "log": "outputs\\logs\\07_verify_outputs.log"
+    }
+  ]
+}

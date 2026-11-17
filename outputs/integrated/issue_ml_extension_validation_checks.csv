@@ -1,0 +1,11 @@
+﻿check,passed,observed,expected,note
+classification split sizes,True,"{'train_n': 21343, 'test_n': 5287}","{'train_n': 21343, 'test_n': 5287}",Time-ordered split from the delivered artifact.
+classification metrics,True,"{'accuracy': 0.9612256478153962, 'macro_f1': 0.919426487965473}","{'accuracy': 0.9612256478, 'macro_f1': 0.919426488}",TF-IDF + logistic regression; labels are existing maintainer tags.
+classification ranking metrics,True,"{'roc_auc': 0.983658746239332, 'average_precision': 0.9419062665919484}","{'roc_auc': 0.9836587462, 'average_precision': 0.9419062666}",Ranking metrics are reported alongside class metrics because the labels are imbalanced.
+classification artifact verification,True,"{'test_rows_verified': 5287, 'metrics_match': True, 'max_probability_difference': 0.0, 'saved_model_verified': True, 'prediction_smoke_test': {'label': 'enhancement', 'positive_label': 'enhancement', 'positive_score': 0.996344739936679}}",metrics_match=true and saved_model_verified=true,Saved predictions and smoke test agree with the delivered model.
+completion selected row exists,True,1,1,24-hour observation window and 7-day completed outcome.
+completion test size and positives,True,"{'n': 1395, 'positives': 22}","{'n': 1395, 'positives': 22}",Positive class is rare in the temporal test set.
+completion metrics,True,"{'roc_auc': np.float64(0.5269813944249486), 'average_precision': np.float64(0.0997498160599984), 'brier': np.float64(0.021151797128467)}","{'roc_auc': 0.5269813944, 'average_precision': 0.0997498161, 'brier': 0.0211517971}",The selected model provides weak ranking signal and is not an automatic decision tool.
+30-day early interaction comparison,True,1,1,Retains the delivered comparison rather than selecting on the test set.
+30-day early interaction AUC,True,0.6133896830799486,0.6133896831,"Useful as a research comparison, not evidence of deployable performance."
+completion artifact verification,True,"{'all_12_cohort_labels_checked': True, 'all_temporal_maturity_gaps_checked': True, 'raw_data_hashes_match': True, 'selected_saved_model_predictions_match': True, 'selected_test_rows': 1395, 'metrics_recomputed': True}",all verification flags true,Recomputed metrics and saved predictions agree.

@@ -1,0 +1,167 @@
+{
+  "generated_local": "2026-11-13T22:38:24",
+  "purpose": "Integration-readiness checks; no refit and no primary output overwritten.",
+  "passed": 18,
+  "total": 18,
+  "checks": [
+    {
+      "check": "RQ1 topic counts sum to denominator",
+      "passed": true,
+      "observed": 9498,
+      "expected": 9498,
+      "note": "Includes OTHER / review-needed category."
+    },
+    {
+      "check": "RQ1 shares sum to one",
+      "passed": true,
+      "observed": 0.9999999999999997,
+      "expected": 1,
+      "note": "Shares are calculated over all eligible English topics."
+    },
+    {
+      "check": "RQ1 denominator is 9,498 English topics",
+      "passed": true,
+      "observed": 9498,
+      "expected": 9498,
+      "note": "Not the 9,569 candidate IDs or 9,518 valid all-language texts."
+    },
+    {
+      "check": "RQ1 valid text flow",
+      "passed": true,
+      "observed": 9518,
+      "expected": 9518,
+      "note": "All-language usable body before English partition."
+    },
+    {
+      "check": "RQ3 post-cutoff creation exclusions",
+      "passed": true,
+      "observed": 17,
+      "expected": 17,
+      "note": "Excluded from the fixed observation window."
+    },
+    {
+      "check": "RQ3 reopened exclusions",
+      "passed": true,
+      "observed": 154,
+      "expected": 154,
+      "note": "Excluded as known reopened records in the supplied survival analysis."
+    },
+    {
+      "check": "RQ3 analysis N reconciliation",
+      "passed": true,
+      "observed": 27585,
+      "expected": 27585,
+      "note": "27,756 - 17 post-cutoff - 154 reopened = 27,585."
+    },
+    {
+      "check": "RQ3 excluded sets are disjoint",
+      "passed": true,
+      "observed": 171,
+      "expected": 171,
+      "note": "No overlap double-counted."
+    },
+    {
+      "check": "RQ3 event counts after fixed cutoff and censoring",
+      "passed": true,
+      "observed": {
+        "0": 16532,
+        "1": 7197,
+        "2": 2059,
+        "3": 1797
+      },
+      "expected": {
+        "0": 16532,
+        "1": 7197,
+        "2": 2059,
+        "3": 1797
+      },
+      "note": "Includes 1 recorded closure after cutoff as censored; reopened rows excluded."
+    },
+    {
+      "check": "RQ3 packaged audit analysis N",
+      "passed": true,
+      "observed": 27585,
+      "expected": 27585,
+      "note": "Cross-check supplied audit against unified issue parquet."
+    },
+    {
+      "check": "RQ3 packaged source hash matches project issue source",
+      "passed": true,
+      "observed": "8b5cea36fff5e7ccefcc787dccee40cd84ee6765d9a760d781c4230105b9bcc9",
+      "expected": "matching SHA-256",
+      "note": "Confirms both analyses use the same issue snapshot."
+    },
+    {
+      "check": "Primary status counts reconcile to 27,756",
+      "passed": true,
+      "observed": 27756,
+      "expected": 27756,
+      "note": "Primary descriptive denominator includes all snapshot records."
+    },
+    {
+      "check": "Extension event counts reconcile to 27,585",
+      "passed": true,
+      "observed": 27585,
+      "expected": 27585,
+      "note": "Competing-risk analysis has a narrower eligible population."
+    },
+    {
+      "check": "30-day completed and closed are distinct",
+      "passed": true,
+      "observed": {
+        "completed": 0.2076834455866714,
+        "closed": 0.31921304501949666
+      },
+      "expected": "completed rate < any-closure rate",
+      "note": "Do not label closed as resolved."
+    },
+    {
+      "check": "Competing-risk curves conserve probability",
+      "passed": true,
+      "observed": 1.2101430968414206e-14,
+      "expected": "< 1e-8",
+      "note": "Open survival plus all cause-specific cumulative incidence equals one."
+    },
+    {
+      "check": "Competing-risk curves are monotone",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "note": "Open probability should decrease; cumulative incidence should increase."
+    },
+    {
+      "check": "RQ1 primary and new themes are not pooled",
+      "passed": true,
+      "observed": {
+        "primary_n": 4307,
+        "new_n": 9498
+      },
+      "expected": "separate estimates",
+      "note": "Different time window, language restriction, sample design, cleaning, and topic map."
+    },
+    {
+      "check": "RQ3 3-day reply and 7-day reply are not pooled",
+      "passed": true,
+      "observed": {
+        "primary": "3-day first external human reply",
+        "extension": "7-day any-other reply"
+      },
+      "expected": "separate outcomes",
+      "note": "Different horizon, event definition, and comment filters."
+    }
+  ],
+  "key_reconciliation": {
+    "primary_issue_snapshot_n": 27756,
+    "post_cutoff_created_n": 17,
+    "reopened_n": 154,
+    "competing_risk_eligible_n": 27585,
+    "eligible_event_counts": {
+      "0": 16532,
+      "1": 7197,
+      "2": 2059,
+      "3": 1797
+    },
+    "rq1_english_denominator": 9498,
+    "rq1_existing_body_topic_n": 4307
+  }
+}

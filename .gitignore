@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+data/raw/
+data/delivery/
+data/legacy/
+outputs/logs/
+outputs/repro_rq5/
+*.tmp
+*.bak

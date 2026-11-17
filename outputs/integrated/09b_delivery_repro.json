@@ -1,0 +1,161 @@
+{
+  "generated_local": "2026-11-13T22:39:41",
+  "purpose": "用交付脚本重跑竞争风险，核对环境、代码与结果；不改写交付包。",
+  "stage_dir": "outputs\\repro_rq5",
+  "script": "data/delivery/rq3_analysis/analyze_issue_outcomes.py",
+  "log": "outputs\\logs\\09b_delivery_repro.log",
+  "environment": {
+    "python": "3.12.10",
+    "pandas": "2.3.3",
+    "numpy": "2.4.2",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "delivered_versions": {
+      "python": "3.11.7",
+      "numpy": "2.2.5",
+      "pandas": "2.2.3",
+      "scipy": "1.15.3",
+      "sklearn": "1.6.1"
+    }
+  },
+  "delivered": {
+    "n": 27585,
+    "event_counts": {
+      "0": 16532,
+      "1": 7197,
+      "2": 2059,
+      "3": 1797
+    },
+    "completed30_rate": 0.2076834455866714,
+    "closed30_rate": 0.31921304501949666,
+    "aj_completed_at_30": 0.18712379809373278,
+    "aj_completed_at_90": 0.2745457936102282
+  },
+  "rerun": {
+    "n": 27585,
+    "event_counts": {
+      "0": 16532,
+      "1": 7197,
+      "2": 2059,
+      "3": 1797
+    },
+    "completed30_rate": 0.2076834455866714,
+    "closed30_rate": 0.31921304501949666,
+    "aj_completed_at_30": 0.18712379809373278,
+    "aj_completed_at_90": 0.2745457936102282
+  },
+  "checks": [
+    {
+      "check": "交付脚本可在本项目环境运行（rc=0）",
+      "passed": true,
+      "observed": 0,
+      "expected": 0,
+      "note": "log=outputs\\logs\\09b_delivery_repro.log"
+    },
+    {
+      "check": "重跑：资格样本 N",
+      "passed": true,
+      "observed": 27585,
+      "expected": 27585,
+      "note": "交付脚本内部口径"
+    },
+    {
+      "check": "重跑：四类事件计数",
+      "passed": true,
+      "observed": {
+        "0": 16532,
+        "1": 7197,
+        "2": 2059,
+        "3": 1797
+      },
+      "expected": {
+        "0": 16532,
+        "1": 7197,
+        "2": 2059,
+        "3": 1797
+      },
+      "note": ""
+    },
+    {
+      "check": "重跑：30 天 completed 固定窗口比例",
+      "passed": true,
+      "observed": 0.2076834455866714,
+      "expected": 0.2076834455866714,
+      "note": ""
+    },
+    {
+      "check": "重跑：30 天任意关闭比例",
+      "passed": true,
+      "observed": 0.31921304501949666,
+      "expected": 0.31921304501949666,
+      "note": ""
+    },
+    {
+      "check": "重跑：AJ completed @30 天",
+      "passed": true,
+      "observed": 0.18712379809373278,
+      "expected": 0.18712379809373278,
+      "note": ""
+    },
+    {
+      "check": "重跑：AJ completed @90 天",
+      "passed": true,
+      "observed": 0.2745457936102282,
+      "expected": 0.2745457936102282,
+      "note": ""
+    },
+    {
+      "check": "重跑：KM 中位任意关闭",
+      "passed": true,
+      "observed": 122.62626157407408,
+      "expected": 122.62626157407408,
+      "note": ""
+    },
+    {
+      "check": "重跑：0–180 天四条曲线逐点一致",
+      "passed": true,
+      "observed": 0.0,
+      "expected": "< 1e-12",
+      "note": "362 个网格点"
+    },
+    {
+      "check": "三方一致：本项目 09 与重跑 AJ completed @30",
+      "passed": true,
+      "observed": 0.18712379809373278,
+      "expected": 0.18712379809373278,
+      "note": ""
+    },
+    {
+      "check": "三方一致：本项目 09 与交付固定窗口 completed",
+      "passed": true,
+      "observed": 0.2076834455866714,
+      "expected": 0.2076834455866714,
+      "note": ""
+    },
+    {
+      "check": "环境差异已记录（版本不同但结果一致）",
+      "passed": true,
+      "observed": {
+        "python": "3.12.10",
+        "pandas": "2.3.3",
+        "numpy": "2.4.2",
+        "scipy": "1.17.0",
+        "sklearn": "1.8.0",
+        "matplotlib": "3.10.8",
+        "delivered_versions": {
+          "python": "3.11.7",
+          "numpy": "2.2.5",
+          "pandas": "2.2.3",
+          "scipy": "1.15.3",
+          "sklearn": "1.6.1"
+        }
+      },
+      "expected": "documented",
+      "note": "交付为 Python 3.11.7 / pandas 2.2.3 / scipy 1.15.3 / sklearn 1.6.1；本项目 3.12.10 等"
+    }
+  ],
+  "passed": 12,
+  "total": 12,
+  "scope_limit": "只复现竞争风险/生存/预测脚本的主结果；不重训论坛主题模型，不重抓数据。"
+}

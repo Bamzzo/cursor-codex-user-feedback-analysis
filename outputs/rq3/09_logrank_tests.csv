@@ -1,0 +1,4 @@
+﻿dimension,groups,chi2,p_value,n_groups,note
+type_primary,bug; connectivity; docs; enhancement; performance; unknown,740.502195082135,8.567577063205567e-158,6,未控制创建月份与标签构成，仅作探索性比较
+entry_primary,app; app-server; cli; extension; ios; sdk; tui; unknown; web,2840.6950081107366,0.0,9,未控制创建月份与标签构成，仅作探索性比较
+env_group,linux; macos; other/unknown; windows,890.6616824116632,9.387636807021913e-193,4,未控制创建月份与标签构成，仅作探索性比较

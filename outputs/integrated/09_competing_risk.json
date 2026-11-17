@@ -1,0 +1,330 @@
+{
+  "generated_local": "2026-11-13T22:38:37",
+  "purpose": "独立复现交付的竞争风险结果，并补做 reopened/截点敏感性；不覆盖主分析。",
+  "seed": 42,
+  "bootstrap_n": 250,
+  "cutoff_delivered": "2026-09-13T00:00:00+00:00",
+  "cutoff_project": "2026-09-13T02:20:37+00:00",
+  "reference": {
+    "n": 27585,
+    "event_counts": {
+      "0": 16532,
+      "1": 7197,
+      "2": 2059,
+      "3": 1797
+    },
+    "fixed_horizon_30d": {
+      "mature_n": 22568,
+      "completed_n": 4687,
+      "completed_rate": 0.2076834455866714,
+      "completed_wilson95": [
+        0.2024409252720518,
+        0.21302546715558254
+      ],
+      "closed_n": 7204,
+      "closed_rate": 0.31921304501949666,
+      "gap_pp": 11.152959943282523
+    },
+    "aj": {
+      "open_cif_30": 0.7116732233890767,
+      "completed_cif_30": 0.18712379809373278,
+      "duplicate_cif_30": 0.06537552891604557,
+      "not_planned_cif_30": 0.03582744960113576,
+      "open_cif_90": 0.5725047512283622,
+      "completed_cif_90": 0.2745457936102282,
+      "duplicate_cif_90": 0.07733261610260848,
+      "not_planned_cif_90": 0.07561683905879059
+    },
+    "km": {
+      "open_30": 0.7116732233890767,
+      "open_90": 0.5725047512283622,
+      "median_any_closure": 122.62626157407408,
+      "open_at_least_90d_n": 5682
+    }
+  },
+  "bootstrap95_reference": {
+    "open": [
+      0.7062211090643301,
+      0.7166906216079104
+    ],
+    "completed": [
+      0.18268450796901578,
+      0.19123245047052292
+    ],
+    "duplicate": [
+      0.06255172215216458,
+      0.06809507062750363
+    ],
+    "not_planned": [
+      0.03352424366159385,
+      0.037904056381863435
+    ]
+  },
+  "scenarios": [
+    {
+      "scenario": "S0_交付口径",
+      "cutoff_utc": "2026-09-13T00:00:00+00:00",
+      "drop_reopened": true,
+      "n": 27585,
+      "censored": 16532,
+      "completed_n": 7197,
+      "duplicate_n": 2059,
+      "not_planned_n": 1797,
+      "completed_cif_30": 0.1871237981,
+      "completed_cif_90": 0.2745457936,
+      "any_closure_cif_30": 0.2883267766,
+      "any_closure_cif_90": 0.4274952488,
+      "duplicate_cif_30": 0.0653755289,
+      "not_planned_cif_30": 0.0358274496,
+      "fixed_completed30_rate": 0.2076834456,
+      "fixed_closed30_rate": 0.319213045,
+      "completed_cif30_boot95": [
+        0.182684508,
+        0.1912324505
+      ],
+      "note": "截点 00:00:00Z；排除 154 条 reopened（交付基准）",
+      "delta_completed_cif_30_pp": 0.0,
+      "delta_completed_cif_90_pp": 0.0
+    },
+    {
+      "scenario": "S1_纳入reopened",
+      "cutoff_utc": "2026-09-13T00:00:00+00:00",
+      "drop_reopened": false,
+      "n": 27739,
+      "censored": 16686,
+      "completed_n": 7197,
+      "duplicate_n": 2059,
+      "not_planned_n": 1797,
+      "completed_cif_30": 0.1860493525,
+      "completed_cif_90": 0.2728001825,
+      "any_closure_cif_30": 0.2866813805,
+      "any_closure_cif_90": 0.4247899926,
+      "duplicate_cif_30": 0.0650067475,
+      "not_planned_cif_30": 0.0356252806,
+      "fixed_completed30_rate": 0.2064393939,
+      "fixed_closed30_rate": 0.3173009161,
+      "completed_cif30_boot95": [
+        0.1822682364,
+        0.1908142522
+      ],
+      "note": "截点 00:00:00Z；154 条 reopened 作为右删失纳入",
+      "delta_completed_cif_30_pp": -0.1074445578,
+      "delta_completed_cif_90_pp": -0.1745611107
+    },
+    {
+      "scenario": "S2_项目截点",
+      "cutoff_utc": "2026-09-13T02:20:37+00:00",
+      "drop_reopened": true,
+      "n": 27602,
+      "censored": 16547,
+      "completed_n": 7199,
+      "duplicate_n": 2059,
+      "not_planned_n": 1797,
+      "completed_cif_30": 0.1870367041,
+      "completed_cif_90": 0.2744524195,
+      "any_closure_cif_30": 0.2881763857,
+      "any_closure_cif_90": 0.4272981499,
+      "duplicate_cif_30": 0.0653351296,
+      "not_planned_cif_30": 0.0358045519,
+      "fixed_completed30_rate": 0.2075622067,
+      "fixed_closed30_rate": 0.3190471974,
+      "completed_cif30_boot95": [
+        0.1826762312,
+        0.1918717553
+      ],
+      "note": "截点 02:20:37Z；排除 reopened（本项目统一快照）",
+      "delta_completed_cif_30_pp": -0.0087093951,
+      "delta_completed_cif_90_pp": -0.0093374063
+    },
+    {
+      "scenario": "S3_项目截点含reopened",
+      "cutoff_utc": "2026-09-13T02:20:37+00:00",
+      "drop_reopened": false,
+      "n": 27756,
+      "censored": 16701,
+      "completed_n": 7199,
+      "duplicate_n": 2059,
+      "not_planned_n": 1797,
+      "completed_cif_30": 0.1859633061,
+      "completed_cif_90": 0.2727080297,
+      "any_closure_cif_30": 0.2865327087,
+      "any_closure_cif_90": 0.4245950744,
+      "duplicate_cif_30": 0.0649667804,
+      "not_planned_cif_30": 0.0356026222,
+      "fixed_completed30_rate": 0.2063198662,
+      "fixed_closed30_rate": 0.3171375759,
+      "completed_cif30_boot95": [
+        0.1812035086,
+        0.1905874694
+      ],
+      "note": "截点 02:20:37Z；reopened 作为删失纳入",
+      "delta_completed_cif_30_pp": -0.1160492024,
+      "delta_completed_cif_90_pp": -0.1837763938
+    }
+  ],
+  "checks": [
+    {
+      "check": "独立复现：资格样本 N",
+      "passed": true,
+      "observed": 27585,
+      "expected": 27585,
+      "note": "27,756 - 17 截点后创建 - 154 reopened"
+    },
+    {
+      "check": "独立复现：四类事件计数",
+      "passed": true,
+      "observed": {
+        "0": 16532,
+        "1": 7197,
+        "2": 2059,
+        "3": 1797
+      },
+      "expected": {
+        "0": 16532,
+        "1": 7197,
+        "2": 2059,
+        "3": 1797
+      },
+      "note": "0=删失, 1=completed, 2=duplicate, 3=not_planned"
+    },
+    {
+      "check": "独立复现：30 天 completed 固定窗口比例",
+      "passed": true,
+      "observed": 0.207683445587,
+      "expected": 0.207683445587,
+      "note": "mature30 n=22568"
+    },
+    {
+      "check": "独立复现：30 天任意关闭固定窗口比例",
+      "passed": true,
+      "observed": 0.319213045019,
+      "expected": 0.319213045019,
+      "note": "固定 30 天窗口的经验比例"
+    },
+    {
+      "check": "独立复现：30 天 completed 与任意关闭不是同一指标",
+      "passed": true,
+      "observed": 11.15,
+      "expected": "> 5 个百分点",
+      "note": "交付口径的 30 天 completed 20.8% vs 任意关闭 31.9%"
+    },
+    {
+      "check": "独立复现：KM 任意关闭 30 天开放概率",
+      "passed": true,
+      "observed": 0.711673223389,
+      "expected": 0.711673223389,
+      "note": ""
+    },
+    {
+      "check": "独立复现：KM 任意关闭 90 天开放概率",
+      "passed": true,
+      "observed": 0.572504751228,
+      "expected": 0.572504751228,
+      "note": ""
+    },
+    {
+      "check": "独立复现：AJ completed 累积发生率 @30 天",
+      "passed": true,
+      "observed": 0.187123798094,
+      "expected": 0.187123798094,
+      "note": ""
+    },
+    {
+      "check": "独立复现：AJ completed 累积发生率 @90 天",
+      "passed": true,
+      "observed": 0.27454579361,
+      "expected": 0.27454579361,
+      "note": ""
+    },
+    {
+      "check": "独立复现：KM 任意关闭中位时间",
+      "passed": true,
+      "observed": 122.626262,
+      "expected": 122.626262,
+      "note": ""
+    },
+    {
+      "check": "独立复现：90 天后仍开放的样本数",
+      "passed": true,
+      "observed": 5682,
+      "expected": 5682,
+      "note": "竞争风险资格样本内"
+    },
+    {
+      "check": "独立复现：0–180 天开放曲线逐点一致",
+      "passed": true,
+      "observed": 0.0,
+      "expected": "< 1e-9",
+      "note": "0.5 天网格，362 个点"
+    },
+    {
+      "check": "独立复现：0–180 天 completed 曲线逐点一致",
+      "passed": true,
+      "observed": 5.551115123125783e-17,
+      "expected": "< 1e-9",
+      "note": ""
+    },
+    {
+      "check": "曲线概率守恒（复现值）",
+      "passed": true,
+      "observed": 9.2148511043888e-15,
+      "expected": "< 1e-9",
+      "note": "开放概率 + 三类累计发生率 = 1"
+    },
+    {
+      "check": "敏感性：reopened 处理对 30 天 completed 的影响 < 1 个百分点",
+      "passed": true,
+      "observed": {
+        "纳入reopened": 0.107,
+        "项目截点含reopened": 0.116
+      },
+      "expected": "< 1 pp",
+      "note": "仅 154/27,756 条，点估计变化小；区间仍需同时报告"
+    },
+    {
+      "check": "敏感性：观察截点对 30 天 completed 的影响 < 0.2 个百分点",
+      "passed": true,
+      "observed": {
+        "项目截点": 0.009
+      },
+      "expected": "< 0.2 pp",
+      "note": "02:20:37Z 与 00:00:00Z 仅差 2 小时 20 分"
+    },
+    {
+      "check": "敏感性：所有情景 completed 均低于任意关闭",
+      "passed": true,
+      "observed": [
+        {
+          "scenario": "S0_交付口径",
+          "completed_cif_30": 0.1871,
+          "any_closure_cif_30": 0.2883
+        },
+        {
+          "scenario": "S1_纳入reopened",
+          "completed_cif_30": 0.186,
+          "any_closure_cif_30": 0.2867
+        },
+        {
+          "scenario": "S2_项目截点",
+          "completed_cif_30": 0.187,
+          "any_closure_cif_30": 0.2882
+        },
+        {
+          "scenario": "S3_项目截点含reopened",
+          "completed_cif_30": 0.186,
+          "any_closure_cif_30": 0.2865
+        }
+      ],
+      "expected": "completed < any closure",
+      "note": "竞争结局不可合并"
+    }
+  ],
+  "passed": 17,
+  "total": 17,
+  "boundaries": [
+    "只重算交付口径下的竞争风险估计，不重训主题模型、不重跑回归与文本预测。",
+    "两个截点相差约 2 小时 20 分，差异很小；但报告必须固定写清用的是哪一个。",
+    "reopened 的早先关闭时间不可见，纳入时只能按当前 open 状态右删失，属于保守处理。",
+    "Aalen–Johansen 为未调整估计；creation cohort 构成变化会影响曲线，不能解释为处理效率。"
+  ]
+}

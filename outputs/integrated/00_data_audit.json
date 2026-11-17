@@ -1,0 +1,159 @@
+{
+  "issues": {
+    "issues_raw": 27756,
+    "issues_after_dedupe": 27756,
+    "issue_duplicates": 0,
+    "issue_created_min": "2025-04-16 17:27:52+00:00",
+    "issue_created_max": "2026-09-13 02:19:58+00:00",
+    "issue_date_na": 0,
+    "issue_invalid_closed": 0,
+    "empty_body": 95,
+    "no_labels": 436,
+    "comments_raw": 115280,
+    "comments_after_dedupe": 115280,
+    "comments_matched": 97034,
+    "comments_unmatched": 18246,
+    "comments_used": 96999,
+    "comments_bot": 22994,
+    "comments_external_human": 60806,
+    "comments_maintainer": 641,
+    "issues_with_external_reply": 15417,
+    "issues_with_maintainer_reply": 462,
+    "outcome_counts": {
+      "open": 16547,
+      "completed": 7199,
+      "duplicate": 2059,
+      "not_planned": 1797,
+      "reopened": 154
+    },
+    "type_counts": {
+      "bug": 21791,
+      "enhancement": 5350,
+      "docs": 271,
+      "unknown": 178,
+      "performance": 69,
+      "connectivity": 59,
+      "help": 26,
+      "feedback": 12
+    },
+    "type_label_counts": {
+      "bug": 21535,
+      "enhancement": 5314,
+      "unknown": 543,
+      "docs": 260,
+      "performance": 59,
+      "connectivity": 45
+    },
+    "entry_counts": {
+      "app": 11906,
+      "cli": 7050,
+      "tui": 2361,
+      "app-server": 1891,
+      "unknown": 1830,
+      "extension": 1797,
+      "web": 534,
+      "ios": 270,
+      "sdk": 117
+    },
+    "env_counts": {
+      "windows": 9572,
+      "unknown": 9142,
+      "macos": 5508,
+      "linux": 2541,
+      "browser": 833,
+      "mobile": 158,
+      "cloud": 2
+    },
+    "management_only_issues": 0,
+    "snapshot_utc": "2026-09-13T02:20:37Z"
+  },
+  "forum": {
+    "forum_topics_raw": 41218,
+    "forum_topics_deduped": 41218,
+    "forum_created_min": "2023-08-21 22:09:04.018000+00:00",
+    "forum_created_max": "2026-09-13 03:09:33.638000+00:00",
+    "forum_body_topics": 4322,
+    "forum_body_posts": 18498,
+    "forum_body_coverage_topics": 0.10485710126643699,
+    "forum_census_topics": 3934,
+    "forum_sample_topics": 388,
+    "forum_tags": 96,
+    "forum_duplicate_topic_ids": 0,
+    "forum_categories": {
+      "Bug Reports": 19286,
+      "Help": 9005,
+      "Feature Requests": 6565,
+      "Discussions": 2464,
+      "Feedback": 1872,
+      "Built for Cursor": 397,
+      "Guides": 274,
+      "Asia": 231,
+      "Europe": 204,
+      "North America": 193,
+      "Built with Cursor": 153,
+      "South America": 119,
+      "Africa": 108,
+      "Extension Verification": 106,
+      "Release Discussions": 99,
+      "Meta": 64,
+      "Announcements": 57,
+      "Oceania": 19,
+      "Showcase": 2
+    },
+    "main4_share": 0.8910670095589306,
+    "accepted_rate": 0.12312581881702168,
+    "zero_reply_rate": 0.6211849192100538
+  },
+  "hn": {
+    "hn_raw": 80510,
+    "hn_keyword_matched": 16506,
+    "hn_stories": 3285,
+    "hn_date_min": "2022-12-31 17:43:03+00:00",
+    "hn_date_max": "2026-09-13 00:50:42+00:00",
+    "note": "关键词模糊匹配，仅作辅助对照，不进入核心结论"
+  },
+  "hashes": [
+    {
+      "file": "codex_issues_full.json",
+      "bytes": 89070964,
+      "sha256": "8b5cea36fff5e7ccefcc787dccee40cd84ee6765d9a760d781c4230105b9bcc9",
+      "manifest_sha256": "8b5cea36fff5e7ccefcc787dccee40cd84ee6765d9a760d781c4230105b9bcc9",
+      "match_manifest": true
+    },
+    {
+      "file": "codex_comments.json",
+      "bytes": 98832343,
+      "sha256": "6d1cd80a5ce973cf5759100425d2ea26c36db6b30f290e9bc6da6366ec7c6b80",
+      "manifest_sha256": "6d1cd80a5ce973cf5759100425d2ea26c36db6b30f290e9bc6da6366ec7c6b80",
+      "match_manifest": true
+    },
+    {
+      "file": "cursor_forum_topics_full.json",
+      "bytes": 17112539,
+      "sha256": "9263daceea5897ecf300ef12406495053500e018960118e2b2eb658d164a821f",
+      "manifest_sha256": "9263daceea5897ecf300ef12406495053500e018960118e2b2eb658d164a821f",
+      "match_manifest": true
+    },
+    {
+      "file": "cursor_forum_content.json",
+      "bytes": 6328009,
+      "sha256": "9d749201a4f7657e8670dc21108ee5e410373b72288f3d233f74b145fc2d81fd",
+      "manifest_sha256": "9d749201a4f7657e8670dc21108ee5e410373b72288f3d233f74b145fc2d81fd",
+      "match_manifest": true
+    },
+    {
+      "file": "cursor_forum_content_census.json",
+      "bytes": 26615567,
+      "sha256": "3caee24c51f79bded953d68f50debbe63ecc2c8f5f810c047e218115f557bb5b",
+      "manifest_sha256": "3caee24c51f79bded953d68f50debbe63ecc2c8f5f810c047e218115f557bb5b",
+      "match_manifest": true
+    },
+    {
+      "file": "hn_discussions.json",
+      "bytes": 73187140,
+      "sha256": "aae97070bce7cc23f7d6a61a44d563236f56753116684ab9fae21ebabdb4b424",
+      "manifest_sha256": "aae97070bce7cc23f7d6a61a44d563236f56753116684ab9fae21ebabdb4b424",
+      "match_manifest": true
+    }
+  ]
+}

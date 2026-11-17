@@ -1,0 +1,45 @@
+﻿check,pass,detail
+"Issue 顶层记录 27,756",True,27756
+Issue 去重后不减少,True,27756
+"评论顶层记录 115,280",True,115280
+"论坛主题 41,218",True,41218
+"正文主题 4,322",True,4322
+"正文帖子 18,498",True,18498
+论坛四类版块合计 89.1%,True,0.8911
+论坛采纳率 12.3%,True,0.1231
+论坛零回复率 62.1%,True,0.6212
+outcome 互斥且覆盖全部,True,"{'open': 16547, 'completed': 7199, 'duplicate': 2059, 'not_planned': 1797, 'reopened': 154}"
+closed 与 open 之和等于总数,True,27756
+close_days 非负（已关闭）,True,
+年龄非负,True,
+验收时现场重算原始文件 SHA-256,True,6/6
+入口分类语义回归样例,True,"{'Cursor desktop app crashes': 'app', 'Cursor cannot connect to MCP': 'unknown', 'Sidebar layout is broken': 'unknown', 'VS Code extension fails': 'extension', 'Codex CLI freezes': 'cli', 'TUI rendering issue': 'tui'}"
+RQ3 分组 90 天指标分子/分母闭合,True,41 groups
+论坛分类覆盖全部主题,True,41218
+主题与帖子未混加,True,41218
+关键输出文件齐全,True,14 files
+核心图存在且非空,True,28
+组员 RQ1 独立扩展图均由当前流程重建,True,4/4; missing=[]
+扩展图清单所列文件均存在且非空,True,4
+三个预测任务均有基线对照,True,"{'closed_within_30d': 4, 'long_running_90d': 4, 'reply_3d': 4}"
+模型指标含 AUC/AP/Brier/召回,True,
+RQ2 有时间外规则检验,True,169
+RQ2 有季度稳定性,True,12
+RQ4 入口识别覆盖率分母闭合,True,"{'Cursor 论坛': 0.1244, 'Codex Issues': 0.4499}"
+RQ4 多选入口条件命中率按已识别分母闭合,True,15 category-channel rows
+RQ1 有正文样本敏感性重跑,True,8
+RQ1 K 扫描覆盖 6 个候选且保留 K=8,True,"K=4,6,8,10,12,14"
+RQ1 重构比例指标明确且范围有效,True,重构诊断不是 PCA 方差解释率
+RQ1 移除易误读的 explained_weight_mean,True,使用相对重构比例并明确边界
+RQ3 文本基线与滚动验证结果齐全,True,"rows=15, rolling_folds=3"
+RQ3 扩展指标有效且保留成熟标签 purge horizon,True,滚动窗只作敏感性验证
+RQ3 A4/A6 诊断边界已记录,True,A4 条件于已回复；A6 校正使用测试集率，仅回顾性诊断
+模型实际白名单输入无禁止字段,True,检查 66 项输入
+新增材料口径核验（08）全部通过,True,18/18
+竞争风险独立复现（09）全部通过,True,17/17
+竞争风险资格样本与主快照可对账,True,N=27585，全量=27756
+30 天 completed 严格低于任意关闭,True,4 个情景均成立
+交付脚本原样重跑（09b）与交付结果一致,True,12/12
+"新 RQ1 分母闭合（9,498）",True,"{'candidate': 9569, 'first_post_fetched': 9543, 'usable_body': 9518, 'english_model': 9498, 'english_share_of_usable': 0.997898718218113}"
+新 RQ1 盲审状态已记录（未填完不得报准确率）,True,pending
+新 RQ1 双人盲审工作簿存在且不泄露模型标签,True,两表仅 review_id/title/excerpt/label/notes
